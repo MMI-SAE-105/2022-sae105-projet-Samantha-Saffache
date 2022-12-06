@@ -14,17 +14,16 @@
 </head>
 <body>
     <header class="header">
-        <a href="/"></a>
-        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
-
-        
+       
+        <div class="headerstart">
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
         class="header__menuBtn">
             <img src="../assets/icones/menu.svg" alt="menu">
-           
             <span></span>
         </button>
+
+    </div>
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
@@ -42,9 +41,12 @@
             </ul>
         </nav>
 
-        
+        <a href="/"></a>
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
+
+        <div class="headerend">
          <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
-            
+        </div>
         
 
        

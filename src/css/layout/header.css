@@ -1,7 +1,9 @@
 /*Header*/
 .header {
-    float: center;
+    
     justify-content: space-between;
+    display: flex;
+
 }
 
 /*Bouton du menu*/

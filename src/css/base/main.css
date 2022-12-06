@@ -1,8 +1,9 @@
+/*Page menu*/
 .article__link {
     background : #31437F;
     color: white;
-    align-items: center;
-    text-align: center;
+    align-items: left;
+    text-align: left;
     display: inline-block;
     text-decoration: none;
     /* pas sur*/

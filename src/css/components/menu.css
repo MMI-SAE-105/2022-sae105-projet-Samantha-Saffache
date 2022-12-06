@@ -7,7 +7,7 @@
     height: 100vh;
     background: #587DCA;
     display: grid;
-    place-content: center;
+    place-content: left;
 }
 
 /*No scroll*/
@@ -16,10 +16,6 @@
 overflow: hidden;
 }
 
-.noscroll,
-.noscroll body {
-  overflow: hidden;
-}
 
 /*Liens du menu vers les articles*/
 .menu__link {
