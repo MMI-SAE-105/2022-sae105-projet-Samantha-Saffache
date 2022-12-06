@@ -1,8 +1,10 @@
+/*Header*/
 .header {
     float: center;
     justify-content: space-between;
 }
 
+/*Bouton du menu*/
 .header__menuBtn {
     position: relative;
     z-index: 10;
@@ -10,6 +12,7 @@
     justify-content: space-between;
 }
 
+/*Bouton version anglaise*/
 .english__link {
     float: right;
     justify-content: space-between;

@@ -1,3 +1,4 @@
+/*Menu*/
 .menu {
     position: fixed;
     top: 0;
@@ -9,18 +10,18 @@
     place-content: center;
 }
 
-
+/*No scroll*/
 .noscroll,
 .noscroll body {
 overflow: hidden;
 }
-
 
 .noscroll,
 .noscroll body {
   overflow: hidden;
 }
 
+/*Liens du menu vers les articles*/
 .menu__link {
 text-decoration: none;
 color: white;
@@ -30,14 +31,4 @@ color: white;
   list-style-type: none;
 }
 
-.article__link {
-background : #31437F;
-color: white;
-align-items: center;
-text-align: center;
-display: inline-block;
-text-decoration: none;
-/* pas sur*/
-width: auto;
-height: auto;
-}
+

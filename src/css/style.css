@@ -7,10 +7,10 @@
 /* Utils */
 
 /* Base */
-
+@import "base/main.css";
 /* Layout */
 @import "layout/header.css";
-@import "footer.css";
+@import "layout/footer.css";
 
 /* Components */
-@import "src/css/components/menu.css";
+@import "components/menu.css";

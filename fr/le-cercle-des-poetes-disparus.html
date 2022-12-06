@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Cercle des poètes disparus, une oeuvre cinématographique de renom</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <title>Ne m'oublie pas</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
 </head>
 <body>
     <header class="header">
@@ -21,7 +26,7 @@
             <span></span>
         </button>
 
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>

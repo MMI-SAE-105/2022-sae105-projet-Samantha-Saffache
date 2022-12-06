@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen,}">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ne m'oublie pas</title>
-    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +26,7 @@
             <span></span>
         </button>
 
-        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
             <ul class="menu__list">
                 <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
@@ -60,50 +60,50 @@
     <main>
 
 <div class="articles">
-        <article class="article">
-            <a class="article__link" href="le-palais-ideal-du-facteur-cheval.html"> <img class="article_image" src="../assets/images/Landing-page/Image-(1).webp" alt="Le Palais Idéal du Facteur Cheval"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="le-palais-ideal-du-facteur-cheval.html"> <img class="article_image" src="../assets/images/Landing-page/Image-(1).webp" alt="Le Palais Idéal du Facteur Cheval"></a>
             <h2 class="article__title">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</h2>
                 <p class="article__presentation">Lieu tout à fait insolite, le Palais Idéal est la réalisation d’un projet complètement fou, sorti tout droit du monde onirique de Joseph Ferdinand Cheval, un facteur devenu célèbre de par son œuvre tout simplement stupéfiante. </p>
                 <a class="article__link" href="le-palais-ideal-du-facteur-cheval.html">lire</a>
         </article>
     
-        <article class="article">
-            <a class="article__link" href="la-voleuse-des-toits.html"> <img src="../assets/images/Landing-page/Image-(2).webp" alt="La Voleuse des Toits"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="la-voleuse-des-toits.html"> <img src="../assets/images/Landing-page/Image-(2).webp" alt="La Voleuse des Toits"></a>
             <h2 class="article__title">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</h2>
                 <p class="article__presentation">“La Voleuse des Toits”, est un roman de fantasy young adult écrit par Laure Dargelos publié en auto-édition en 2019. Née en 1991, l’autrice, auparavant juriste, consacre son temps à l’écriture.</p>
                 <a class="article__link" href="la-voleuse-des-toits.html">lire</a>
         </article>
     
-        <article>
-            <a class="article__link" href="let-go-sam-rivera.html"> <img src="../assets/images/Landing-page/Image-(3).webp" alt="Let Go de Sam Rivera"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="let-go-sam-rivera.html"> <img src="../assets/images/Landing-page/Image-(3).webp" alt="Let Go de Sam Rivera"></a>
             <h2 class="article__title">Let Go de Sam Rivera, le passé sombre d’une vie</h2>
                 <p class="article__presentation">Sam Rivera (Samuel Benjamin Rivera) est un jeune auteur-compositeur interprète de musique pop et R&B chrétienne qui vit à Portland. “Let Go”, un de ses singles sorti cette année, fait référence à sa vie, c’est ce que nous allons découvrir.</p>
                 <a class="article__link" href="let-go-sam-rivera.html">lire</a>
         </article>
     
-        <article>
-            <a class="article__link" href="le-cercle-des-poetes-disparus.html"> <img src="../assets/images/Landing-page/Image-(4).webp" alt="Le Cercle des Poètes Disparus"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="le-cercle-des-poetes-disparus.html"> <img src="../assets/images/Landing-page/Image-(4).webp" alt="Le Cercle des Poètes Disparus"></a>
             <h2 class="article__title">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</h2>
                 <p class="article__presentation">Véritable succès du cinéma, “Le Cercle des poètes disparus” est un film culte des années 80 réalisé par Peter Weir.</p>
                 <a class="article__link" href="le-cercle-des-poetes-disparus.html">lire</a>
         </article>
     
-        <article>
-            <a class="article__link" href="le-conformisme-et-la-manipulation.html"> <img src="../assets/images/Landing-page/Image-(5).webp" alt="Le conformisme et la manipulation"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="le-conformisme-et-la-manipulation.html"> <img src="../assets/images/Landing-page/Image-(5).webp" alt="Le conformisme et la manipulation"></a>
             <h2 class="article__title">Le conformisme et la manipulation</h2>
                 <p class="article__presentation">Le conformisme est présent partout, dans notre quotidien. C’est une sorte de pression sociale, de manipulation mentale, qui pousse les gens à faire quelque chose en fonction de la « normalité ».</p>
                 <a class="article__link" href="le-conformisme-et-la-manipulation.html">lire</a>
         </article>
     
-        <article>
-            <a class="article__link" href="etre-vraiment-libre-de-son-destin.html"> <img src="../assets/images/Landing-page/Image-(6).webp" alt="Être (vraiment) libre de son destin"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="etre-vraiment-libre-de-son-destin.html"> <img src="../assets/images/Landing-page/Image-(6).webp" alt="Être (vraiment) libre de son destin"></a>
             <h2 class="article__title">Être (vraiment) libre de son destin</h2>
                 <p class="article__presentation">Il n’y a que nous-mêmes qui pouvons décider de notre vie, certes, nous allons tous mourir un jour, mais comment allons-nous utiliser ce temps, ce corps et ces capacités que nous avons ? </p>
                 <a class="article__link" href="etre-vraiment-libre-de-son-destin.html">lire</a>
         </article>
     
-        <article>
-            <a class="article__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html"> <img src="../assets/images/Landing-page/Image-(7).webp" alt="À la découverte d’oeuvres de scénographes"></a>
+        <article class="article__item">
+            <a class="article__imageLink" href="a-la-decouverte-d-oeuvres-de-scenographes.html"> <img src="../assets/images/Landing-page/Image-(7).webp" alt="À la découverte d’oeuvres de scénographes"></a>
             <h2 class="article__title">À la découverte d’oeuvres de scénographes</h2>
                 <p class="article__presentation">Au travers des centaines de réalisations incluses dans ce livre, nous découvrons les multiples facettes du métier de scénographe. </p>
                 <a class="article__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">lire</a>

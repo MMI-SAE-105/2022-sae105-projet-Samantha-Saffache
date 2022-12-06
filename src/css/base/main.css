@@ -1,0 +1,11 @@
+.article__link {
+    background : #31437F;
+    color: white;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    /* pas sur*/
+    width: auto;
+    height: auto;
+    }
