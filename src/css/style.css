@@ -1,30 +1,6 @@
-.noscroll,
-.noscroll body {
-  overflow: hidden;
-}
 
-.menu__link {
-text-decoration: none;
-color: white;
-}
-
-.menu__item {
-  list-style-type: none;
-}
-
-.article__link {
-background : #31437F;
-color: white;
-align-items: center;
-text-align: center;
-display: inline-block;
-text-decoration: none;
-/* pas sur*/
-width: auto;
-height: auto;
-
-
-}
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* Vendors */
 
@@ -37,4 +13,4 @@ height: auto;
 @import "footer.css";
 
 /* Components */
-@import "components/menu.css";
+@import "src/css/components/menu.css";

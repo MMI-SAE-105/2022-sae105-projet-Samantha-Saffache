@@ -8,37 +8,43 @@
     <link rel="stylesheet" href="/src/css/style.css">
 </head>
 <body>
-    <header>
+    <header class="header">
         <a href="/"></a>
-        <a href="index.html"><img src="../assets/icones/Logo-header.svg" alt="logo"></a>
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
-        <button>
+        
+
+        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
+        class="header__menuBtn">
             <img src="../assets/icones/menu.svg" alt="menu">
+           
             <span></span>
         </button>
 
+        <nav id="mainNav" x-show="menuIsOpen" x-transition.duration.500ms class="menu">
+
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
+                <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
+                <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
+                <li class="menu__item"><a class="menu__link" href="le-cercle-des-poetes-disparus.html">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</a></li>
+                <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
+                <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
+                <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
+                <li class="menu__item"><a class="menu__link" href="autres-projets.html">Autres projets</a></li>
+                <li class="menu__item"><a class="menu__link" href="a-propos.html">À propos</a></li>
+                <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+            </ul>
+        </nav>
+
         
-         <a href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
             
         
 
        
-        <nav>
-            <ul>
-                <li><a href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
-                <li><a href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
-                <li><a href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
-                <li><a href="le-cercle-des-poetes-disparus.html">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</a></li>
-                <li><a href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
-                <li><a href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
-                <li><a href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                <li><a href="autres-projets.html">Autres projets</a></li>
-                <li><a href="a-propos.html">À propos</a></li>
-                <li><a href="glossaire.html">Glossaire</a></li>
-            </ul>
-        </nav>
+     
     </header>
-
 
     <main>
         <img src="../assets/images/Article-6/image-1.webp" alt="Photographie représentantvune personne libre">
@@ -71,16 +77,19 @@
     </article>
     </main>
 
-    <footer>
-        <img src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><p>Retour en haut</p>
-       
-        <p>Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-        <img src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a>
-    
+    <footer class="footer" >
+        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
+        <p class="footer__backTopText">Retour en haut</p>
+      
+        
+        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
+            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__social">
+        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
+        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
+        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+            </div>
         
     </footer>
 
