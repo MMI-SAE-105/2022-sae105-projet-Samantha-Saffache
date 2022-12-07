@@ -5,9 +5,11 @@
 /* Vendors */
 
 /* Utils */
+@import "utils/variables.css";
 
 /* Base */
 @import "base/main.css";
+
 /* Layout */
 @import "layout/header.css";
 @import "layout/footer.css";

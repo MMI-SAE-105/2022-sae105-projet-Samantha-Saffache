@@ -1,0 +1,27 @@
+:root {
+
+/* Color styles */
+--light: rgba(255, 255, 255, 1);
+--moon: rgba(239, 241, 237, 1);
+--ocean: rgba(64, 148, 222, 1);
+--dream: rgba(88, 125, 202, 1);
+--starry: rgba(49, 67, 127, 1);
+--midnight: rgba(33, 32, 70, 1);
+--infinity: rgba(0, 0, 0, 1);
+
+/* Text-size styles */
+--heading-1: 36px;
+--heading-2: 25px;
+--heading-3: 20px;
+--body-1: 20px;
+--body-2: 13px;
+--small--text: 11px;
+--b-u-t-t-o-n: 10px;
+--s-m-a-l-l--t-e-x-t--u-p-p-e-r-c-a-s-e: 13px;
+--heading-4: 11px;
+--italic: 13px;
+--titres-menu: 14px;
+
+/* Polices de caractère */
+font-family: 'Inter', sans-serif;
+}
