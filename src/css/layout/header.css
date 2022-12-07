@@ -1,9 +1,17 @@
 /*Header*/
 .header {
-    
+    background: #EFF1ED;
     justify-content: space-between;
     display: flex;
+   
 
+}
+
+.header__end {
+
+    display: flex;
+    justify-content: space-between;
+   
 }
 
 /*Bouton du menu*/
@@ -12,10 +20,20 @@
     z-index: 10;
     float: left;
     justify-content: space-between;
+    color: #31437F;
+    background: none;
+    border: none;
 }
 
 /*Bouton version anglaise*/
 .english__link {
     float: right;
     justify-content: space-between;
+    color: #31437F;
+
+    position: absolute;
+    left: 83.47%;
+    right: 10.13%;
+    top: 53.21%;
+    bottom: 24.77%;
 }

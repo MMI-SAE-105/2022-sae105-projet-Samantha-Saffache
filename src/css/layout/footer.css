@@ -1,5 +1,8 @@
 /* Footer*/
 .footer {
+    background-color: #31437F;
+    align-items: center;
+    color: white;
 
 }
 
@@ -15,22 +18,30 @@
 
 /* Retour en haut */
 .footer__backTop {
+    align-content: center;
 
 }
 
 .footer__backTopText {
+    align-content: center;
 
 }
 
 /* Liens du footer */
 .footer__link {
-   
+   color: white;
  
 }
 
 
+
 /* Réseaux sociaux du footer */
 .footer__social {
+    fill: white;
 
 
+}
+
+.footer__icons {
+   fill: white;
 }
