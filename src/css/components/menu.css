@@ -10,6 +10,10 @@
     place-content: left;
 }
 
+.menu__close {
+
+}
+
 /*No scroll*/
 .noscroll,
 .noscroll body {
@@ -25,6 +29,36 @@ color: white;
 
 .menu__item {
   list-style-type: none;
+  margin-bottom: 26px;
+  
 }
 
+.articles__section {
+  margin-top: 47px;
+  margin-bottom: 47px;
 
+}
+
+.other__section {
+
+}
+
+.menu__buttons {
+  background : white;
+  color: #31437F;
+  align-items: center;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  width: 129px;
+  height: 42px;
+  border-radius: 9px;
+  vertical-align: middle;
+  margin-bottom: 30px;
+
+}
+
+.menu__buttonsText {
+  text-decoration: none;
+  color: #31437F;
+}

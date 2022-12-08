@@ -3,16 +3,24 @@
     background-color: #31437F;
     align-items: center;
     color: white;
+    
 
 }
 
 /* Logo du footer */
 .footer__logo {
+    
 
 }
 
 /* Texte du footer */
 .footer__text {
+    text-align: center;
+
+}
+
+.footer__mentions {
+    text-align: left;
 
 }
 
@@ -23,7 +31,7 @@
 }
 
 .footer__backTopText {
-    align-content: center;
+    text-align: center;
 
 }
 
