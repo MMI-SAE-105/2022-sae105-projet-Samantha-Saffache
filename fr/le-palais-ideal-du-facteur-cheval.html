@@ -14,37 +14,53 @@
 </head>
 <body>
     <header class="header">
-        <a href="/"></a>
-        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
-
+       
         
 
         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
         class="header__menuBtn">
             <img src="../assets/icones/menu.svg" alt="menu">
-           
             <span></span>
         </button>
 
+   
+
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
+            <div id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+
             <ul class="menu__list">
-                <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
-                <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
-                <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
-                <li class="menu__item"><a class="menu__link" href="le-cercle-des-poetes-disparus.html">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</a></li>
-                <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
-                <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
-                <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                <li class="menu__item"><a class="menu__link" href="autres-projets.html">Autres projets</a></li>
-                <li class="menu__item"><a class="menu__link" href="a-propos.html">À propos</a></li>
-                <li class="menu__item"><a class="menu__link" href="glossaire.html">Glossaire</a></li>
+                
+                
+                    <div class="articles__section">
+                        <p class="menu__buttons">Articles</p>
+                        <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
+                        <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
+                        <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
+                        <li class="menu__item"><a class="menu__link" href="le-cercle-des-poetes-disparus.html">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</a></li>
+                        <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
+                        <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
+                        <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
+                    </div>
+                
+            
+            
+                
+                    <div class="other__section">
+                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
+                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
+                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
+                    </div>
+                
+                
             </ul>
         </nav>
 
-        
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
+
+        <div class="header__end">
          <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
-            
+        </div>
         
 
        
@@ -52,15 +68,18 @@
     </header>
 
     <main>
-        <img src="../assets/images/Article-1/image-1.webp" alt="le palais idéal du facteur cheval">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-1/image-1.webp" alt="le palais idéal du facteur cheval">
 
-        <h1>Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</h1>
+        <h1 class="pageArticle__title">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</h1>
         
-        <p>Lieu tout à fait insolite, le Palais Idéal est la réalisation d’un projet complètement fou, sorti tout droit du monde onirique de Joseph Ferdinand Cheval, un facteur devenu célèbre de par son œuvre tout simplement stupéfiante. </p>
+        
+        <div class="pageArticle__chapo">
+            <p>Lieu tout à fait insolite, le Palais Idéal est la réalisation d’un projet complètement fou, sorti tout droit du monde onirique de Joseph Ferdinand Cheval, un facteur devenu célèbre de par son œuvre tout simplement stupéfiante. </p>
+        </div>
   
-        <article>
-          <h2>Un homme autodidacte</h2>
-          <p>Né en 1836 à Charmes-sur-l’Herbasse, Joseph Ferdinand Cheval, issu d’une famille pauvre, 
+        <article class="pageArticle__content">
+          <h2 class="pageArticle__sousTitre">Un homme autodidacte</h2>
+          <p class="pageArticle__text">Né en 1836 à Charmes-sur-l’Herbasse, Joseph Ferdinand Cheval, issu d’une famille pauvre, 
             quitte l’école à l’âge de 12 ans. Il se retrouve orphelin alors qu’il est encore mineur, puis plus tard il devient apprenti boulanger. 
             
             Après avoir été exempté de son service militaire, Joseph se marie à 22 ans. A la recherche de travail, il quitte Hauterives et devient, agriculteur, puis ouvrier boulanger. Son premier fils meurt à 1 an seulement, tandis que deux ans plus tard, naît son second fils Ferdinand Cyril. 
@@ -68,54 +87,54 @@
             C’est en 1867 que Joseph devient facteur, après un concours, mais malheureusement, quelques années plus tard, un nouvel évènement tragique survient dans sa vie : la mort de sa femme, âgée de 37 ans. Il se remarie 5 ans plus tard avec Claire-Philomène-Richaud, qui donne naissance à sa fille Alice-Marie-Philomène.
             </p>
 
-            <h2>La genèse du projet</h2>
-            <p>Tout a commencé lors d’une de ses tournées de travail : manquant de tomber en butant sur une pierre, le Facteur Cheval est alors attiré par la forme étrange de celle-ci, qu’il nomme “pierre d'achoppement". </p>
+            <h2 class="pageArticle__sousTitre">La genèse du projet</h2>
+            <p class="pageArticle__text">Tout a commencé lors d’une de ses tournées de travail : manquant de tomber en butant sur une pierre, le Facteur Cheval est alors attiré par la forme étrange de celle-ci, qu’il nomme “pierre d'achoppement". </p>
             
-            <blockquote>“Puisque la nature veut faire la scullputre, je ferai la maçonnerie et l’architecture.”</blockquote>
+            <blockquote class="pageArticle__quote">“Puisque la nature veut faire la scullputre, je ferai la maçonnerie et l’architecture.”</blockquote>
             
-            <p>Trouvant le lendemain des pierres tout aussi belles, une idée germa dans son esprit, car, voyant que la nature sans avoir « appris » à sculpter, produit de si belles pierres, il pourrait lui-même aussi produire une œuvre architecturale alors qu’il n’a jamais étudié en ce sens.</p>
-            <p>C’est ainsi qu’accompagné de sa brouette, le facteur Cheval ramasse quotidienne-
+            <p class="pageArticle__text">Trouvant le lendemain des pierres tout aussi belles, une idée germa dans son esprit, car, voyant que la nature sans avoir « appris » à sculpter, produit de si belles pierres, il pourrait lui-même aussi produire une œuvre architecturale alors qu’il n’a jamais étudié en ce sens.</p>
+            <p class="pageArticle__text">C’est ainsi qu’accompagné de sa brouette, le facteur Cheval ramasse quotidienne-
                 mentdes pierres singulières afin de
                 bâtir un palais imaginaire. Les 33
                 années de sa vie qu’il consacre à sa 
                 construction témoignent
                 de sa persévérance.</p>
-                <img src="../assets/images/Article-1/image-2.webp" alt="le facteur cheval">
-                <img src="../assets/images/Article-1/image-3.webp" alt="le palais idéal">
+                <img class="pageArticle__image" src="../assets/images/Article-1/image-2.webp" alt="le facteur cheval">
+                <img  class="pageArticle__image"src="../assets/images/Article-1/image-3.webp" alt="le palais idéal">
 
-                <h2>Mais pourquoi un tel succès ?</h2>
-                <p>Classé monument historique, ce palais contient toute une richesse de détails, on peut y voir des animaux, tout comme des créatures mythologiques, sans compter une architecture de tous les continents. Une fontaine, autrefois fonctionnelle, ainsi que la « pierre d’achoppe-
+                <h class="pageArticle__sousTitre">Mais pourquoi un tel succès ?</h2>
+                <p class="pageArticle__text">Classé monument historique, ce palais contient toute une richesse de détails, on peut y voir des animaux, tout comme des créatures mythologiques, sans compter une architecture de tous les continents. Une fontaine, autrefois fonctionnelle, ainsi que la « pierre d’achoppe-
                     ment », cette dernière étant à l’origine de cet édifice, font également partie du décor.</p>
 
-                    <img src="../assets/images/Article-1/image-4.webp" alt="sculptures de monuments sur le palais idéal du facteur cheval">
+                    <img class="pageArticle__image" src="../assets/images/Article-1/image-4.webp" alt="sculptures de monuments sur le palais idéal du facteur cheval">
 
-                <p>Le facteur Cheval a réussi l’incroyable exploit architectural d’intégrer à son palais imaginaire des grottes, des temples, une ébauche de la Maison Blanche, un chalet suisse ou encore une mosquée. Il a vraiment puisé dans différents styles et différentes époques.
+                <p class="pageArticle__text">Le facteur Cheval a réussi l’incroyable exploit architectural d’intégrer à son palais imaginaire des grottes, des temples, une ébauche de la Maison Blanche, un chalet suisse ou encore une mosquée. Il a vraiment puisé dans différents styles et différentes époques.
                     Peut-être cet homme rêvait-il de faire de grands voyages, de découvrir le monde, mais, ne le pouvant pas, il a probablement tenté d’amener ces paysages lointains à lui. 
                     Il s’est inspiré du poème « Ton idéal, ton Palais » d’Emile Roux Parassac pour nommer son œuvre.
                     . Il a d’ailleurs écrit lui-même des textes poétiques, visibles sur plusieurs façades de son Palais.
                     </p>
 
-            <img src="../assets/images/Article-1/image-5.webp" alt="face sud du palais idéal"> <img src="../assets/images/Article-1/image-6.webp" alt="le palais idéal">
+            <img class="pageArticle__image" src="../assets/images/Article-1/image-5.webp" alt="face sud du palais idéal"> <img src="../assets/images/Article-1/image-6.webp" alt="le palais idéal">
           
-          <p>« Travail d’un seul homme », c’est la signature d’un facteur exceptionnel ignorant tout de l’architecture, qui, pendant plus de trente ans, a dédié sa vie à la réalisation du Palais de ses rêves.
+          <p class="pageArticle__text">« Travail d’un seul homme », c’est la signature d’un facteur exceptionnel ignorant tout de l’architecture, qui, pendant plus de trente ans, a dédié sa vie à la réalisation du Palais de ses rêves.
             Son histoire a tellement marqué les esprits qu’elle est invoquée, dans la littérature, le cinéma, ou encore la chanson. C’est, pour les artistes, une façon de lui rendre hommage. 
             </p>
             
-            <p>Par exemple le premier film lui étant consacré, est un documentaire court-métrage de Ado Kyrou, en 1958. Puis plus récemment, c’est Niels Tavernier qui met en scène son histoire dans le cinéma. </p>
-            <img src="../assets/images/Article-1/image-7.webp" alt="L'Incroyable Histoire du facteur Cheval, Niels Tavernier, 2019.">
+            <p class="pageArticle__text">Par exemple le premier film lui étant consacré, est un documentaire court-métrage de Ado Kyrou, en 1958. Puis plus récemment, c’est Niels Tavernier qui met en scène son histoire dans le cinéma. </p>
+            <img  class="pageArticle__image"src="../assets/images/Article-1/image-7.webp" alt="L'Incroyable Histoire du facteur Cheval, Niels Tavernier, 2019.">
             
-            <p>Enfin, dans la peinture, on peut notamment retrouver un hommage de Picasso.</p>
-            <img src="../assets/images/Article-1/image-8.webp" alt="Peinture Le Facteur Cheval de Pablo Picasso">
-            <p>Classé monument historique au titre de l’art naïf en 1969 par André Malraux, le Palais Idéal est selon lui, la seule architecture naïve au monde.
+            <p class="pageArticle__text">Enfin, dans la peinture, on peut notamment retrouver un hommage de Picasso.</p>
+            <img class="pageArticle__image" src="../assets/images/Article-1/image-8.webp" alt="Peinture Le Facteur Cheval de Pablo Picasso">
+            <p class="pageArticle__text">Classé monument historique au titre de l’art naïf en 1969 par André Malraux, le Palais Idéal est selon lui, la seule architecture naïve au monde.
 
                 Le profil de cet homme correspond aux thèmes que je souhaitais aborder dans mon site. 
                 Je trouve son parcours très inspirant, il donne une leçon de vie intéressante. 
                 Son courage et sa patience sont remarquables, passer autant d’années à réaliser quelque chose de manière autodidacte est réellement impressionnant. D’autant plus que les gens de son époque le trouvaient excentrique, il devait probablement passer pour un illuminé pour certains, et ça ne l’a pas arrêté dans son élan pour autant, il avait un objectif et il souhaitait le réaliser jusqu’au bout. Ayant quitté ce monde il y a bientôt cent ans, le facteur Cheval, à l’histoire insolite, continue aujourd’hui de recevoir de la reconnaissance dans le monde entier.</p>
                 
 <section>
-    <h2>Lieux similaires</h2>
+    <h2 class="pageArticle__sousTitre">Lieux similaires</h2>
     
-    <div><img src="../assets/images/Article-1/image-9.webp" alt="le tombeau du facteur Cheval">
+    <div class="pageArticle__friseImage"><img src="../assets/images/Article-1/image-9.webp" alt="le tombeau du facteur Cheval">
         <p>Le tombeau du facteur Cheval</p>
         <p>France</p>
         <p>1922</p>
