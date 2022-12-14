@@ -25,6 +25,11 @@ overflow: hidden;
 .menu__link {
 text-decoration: none;
 color: white;
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 100%;
 }
 
 .menu__item {
@@ -44,7 +49,7 @@ color: white;
 }
 
 .menu__buttons {
-  background : white;
+  background : var(--light);
   color: #31437F;
   align-items: center;
   text-align: center;
@@ -55,10 +60,29 @@ color: white;
   border-radius: 9px;
   vertical-align: middle;
   margin-bottom: 30px;
+  justify-content: center;
+  display: flex;
+  
 
 }
 
 .menu__buttonsText {
   text-decoration: none;
   color: #31437F;
+  font-style: var(--b-u-t-t-o-n) ;
+  
+}
+
+.menu__closeBtn {
+  position: absolute;
+  left: 0;
+  right: 0;
+
+}
+
+.menu__close {
+  position: absolute;
+  left: 0;
+  right: 0;
+
 }

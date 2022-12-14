@@ -3,12 +3,17 @@
     background-color: #31437F;
     align-items: center;
     color: white;
+
     
 
 }
 
 /* Logo du footer */
 .footer__logo {
+    align-content: center;
+    left: auto;
+    right: auto;
+    
     
 
 }
