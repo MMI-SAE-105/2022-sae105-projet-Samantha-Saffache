@@ -27,7 +27,7 @@
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
 
             <ul class="menu__list">
                 
@@ -51,9 +51,11 @@
                         <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
                         <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
                     </div>
-                
+               
                 
             </ul>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
@@ -73,7 +75,9 @@
 
         <h1>La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</h1>
         
-        <p>“La Voleuse des Toits”, est un roman de fantasy young adult écrit par Laure Dargelos publié en auto-édition en 2019. Il s’agit de son tout premier roman. Née en 1991, l’autrice, auparavant juriste, consacre son temps à l’écriture. </p>
+        <div class="pageArticle__chapo">
+            <p>“La Voleuse des Toits”, est un roman de fantasy young adult écrit par Laure Dargelos publié en auto-édition en 2019. Il s’agit de son tout premier roman. Née en 1991, l’autrice, auparavant juriste, consacre son temps à l’écriture. </p>
+        </div>
   
         <article>
           <h2>Une réalité qui glace le sang</h2>
@@ -102,7 +106,7 @@
                 <section x-data="{open:false}">
                     <a href=""><p>lire un extrait</p></a> @click="open = !open"> 
                     </button>
-                    <p class="" x-show="open"> 
+                    <p class="extrait__text" x-show="open"> 
                         — Regarde autour de toi, mon enfant. Ne vois-tu pas à quel point le monde a besoin d’être changé ? 
                         
                         Ses paroles étaient restées gravées dans sa mémoire comme l’image de cette nuit où, pour la première fois, elle avait brisé l’interdit pour s’aventurer sur les toits. Profitant d’une fenêtre cassée, la fillette s’était glissée dans la maison de ce vieillard dont le crime était de posséder des livres. 
@@ -116,8 +120,8 @@
 
 
                 <h2>Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
-                <a href="../https://www.lauredargelosauteur.fr/">Site de l’autrice Laure Dargelos</a>
-                <a href="../https://www.youtube.com/watch?v=0UZhWMKcdPI">Bande annonce du livre</a>
+                <a class="pageArticle__link" href="https://www.lauredargelosauteur.fr/">Site de l’autrice Laure Dargelos</a>
+                <a class="pageArticle__link" href="https://www.youtube.com/watch?v=0UZhWMKcdPI">Bande annonce du livre</a>
                 
             </article>   
         </main> 

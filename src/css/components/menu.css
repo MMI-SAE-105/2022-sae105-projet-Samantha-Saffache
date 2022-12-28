@@ -30,6 +30,7 @@ font-style: normal;
 font-weight: 700;
 font-size: 14px;
 line-height: 100%;
+position: relative;
 }
 
 .menu__item {
@@ -85,4 +86,10 @@ line-height: 100%;
   left: 0;
   right: 0;
 
+}
+
+.menu__illustrations {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }

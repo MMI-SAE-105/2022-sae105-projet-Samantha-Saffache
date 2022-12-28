@@ -27,7 +27,7 @@
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
 
             <ul class="menu__list">
                 
@@ -51,9 +51,11 @@
                         <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
                         <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
                     </div>
-                
+               
                 
             </ul>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
@@ -73,7 +75,9 @@
 
         <h1>Let Go de Sam Rivera, le passé sombre d’une vie</h1>
         
-        <p>Sam Rivera (Samuel Benjamin Rivera) est un jeune auteur-compositeur interprète de musique pop et R&B chrétienne qui vit à Portland. Enfant de pasteur, il s’est fait connaître en publiant des covers sur sa chaîne YouTube, mais derrière son succès se cache un lourd passé. “Let Go”, un de ses singles sorti cette année, fait référence à sa vie, c’est ce que nous allons découvrir.</p>
+        <div class="pageArticle__chapo">
+            <p>Sam Rivera (Samuel Benjamin Rivera) est un jeune auteur-compositeur interprète de musique pop et R&B chrétienne qui vit à Portland. Enfant de pasteur, il s’est fait connaître en publiant des covers sur sa chaîne YouTube, mais derrière son succès se cache un lourd passé. “Let Go”, un de ses singles sorti cette année, fait référence à sa vie, c’est ce que nous allons découvrir.</p>
+        </div>
   
         <article>
           <h2>Une période sombre</h2>
@@ -123,7 +127,7 @@
                 Let Go parle donc de lâcher prise, d’un homme souffrant de nombreux vices qui a donné sa vie à Dieu et qui a été totalement transformé en le louant.</p>
             
              <h2>Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
-             <a href="https://www.samriveramusic.com/">Site du chanteur Sam Rivera</a>
+             <a class="pageArticle__link" href="https://www.samriveramusic.com/">Site du chanteur Sam Rivera</a>
 
         </article>    
     </main>

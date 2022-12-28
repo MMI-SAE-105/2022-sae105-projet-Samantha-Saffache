@@ -1,7 +1,16 @@
+.center__settings {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+
 .welcome__logo {
     
     height: 313px;
     width: 313px;
+
 
 }
 
@@ -9,6 +18,7 @@
     height: 191px;
     width: 289px;
     border-radius: 20px;
+
 }
 
 .welcome__block {
@@ -16,6 +26,9 @@
     height: 215px;
     width: 315px;
     border-radius: 20px;
+
+
+    
 
 }
 
@@ -35,6 +48,8 @@
     vertical-align: middle;
     margin-top: 16px;
     margin-bottom: 23px;
+
+
 }
 
 .welcome__description {
@@ -51,6 +66,7 @@
     margin-bottom: 28px;
 
     
+    
 }
 
 
@@ -61,6 +77,8 @@
     max-width: 100%;
     width: 241px;
     height: 273px;
+
+   
    
    
 }
@@ -70,6 +88,8 @@
     width: 273px;
     height: 241px;
     border-radius: 20px;
+
+  
 }
 
 
@@ -80,6 +100,8 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 100%;
+    text-decoration: none;
+
 }
 
 .article__block {
@@ -87,7 +109,9 @@
     height: 380px;
     width: 313px;
     border-radius: 25px;
-    
+    justify-content: center;
+    align-items: center;
+
     
 }
 
@@ -107,6 +131,8 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 160%;
+
+
 }
 
 .article__link {
@@ -124,6 +150,11 @@
     margin-bottom: 27px;
     justify-content: center;
     display: flex;
+
+    }
+
+    .article__titleLink {
+        text-decoration: none;
     }
 
 
