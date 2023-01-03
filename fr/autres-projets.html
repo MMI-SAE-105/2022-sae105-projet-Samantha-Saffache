@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -69,106 +75,123 @@
      
     </header>
 
-
-    <main>
-        <h2>Autres projets</h2>
-
-        <div>
-            <ul>
-                <li>
-                    <h4>Réminiscence</h4>
-                    <p>Zoé Schoellhammer</p>
-                </li>
-            </ul>
-        </div>
-
-
-        <div>
-            <ul>
-                <li>
-                    <h4>Un autre monde</h4>
-                    <p>Enzo Tournoux</p>
-                </li>
-            </ul>
-        </div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Trav’All</h4>
-            <p>Enes Tavucku</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Génocide caché</h4>
-            <p>Oliventhan Thamilsenvan</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Reboot</h4>
-            <p>Atnan Tas</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Society Mind</h4>
-            <p>Emma Wettlé</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Memories</h4>
-            <p>Angelo Simoes</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Past Life</h4>
-            <p>Kubilay Yardimli</p>
-        </li>
-    </ul>
-</div>
-
-<div>
-    <ul>
-        <li>
-            <h4>Back To The Youth</h4>
-            <p>Louis Vachon</p>
-        </li>
-    </ul>
-</div>
+    
+    <main class="otherprojects__main">
+       
+        
+            <div class="main">
+                <p class="otherProjects__title">Autres projets</p>
+                <div class="other__projects">
+                
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Réminiscence</h4>
+                            <p class="project__author">Zoé Schoellhammer</p>
+                        </div>
+                    </a>
+                
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Un autre monde</h4>
+                            <p class="project__author">Enzo Tournoux</p>
+                        </div>
+                    </a>
+                
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Trav’All</h4>
+                            <p class="project__author">Enes Tavucku</p>
+                        </div>
+                    </a>
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Génocide caché</h4>
+                            <p class="project__author">Oliventhan Thamilsenvan</p>
+                        </div>
+                    </a>
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Reboot</h4>
+                            <p class="project__author">Atnan Tas</p>
+                        </div>
+                    </a>
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Society Mind</h4>
+                            <p class="project__author">Emma Wettlé</p>
+                        </div>
+                    </a>
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Memories</h4>
+                            <p class="project__author">Angelo Simoes</p>
+                        </div>
+                    </a>
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Past Life</h4>
+                            <p class="project__author">Kubilay Yardimli</p>
+                        </div>
+                    </a>
+                
+                    <a class="otherprojects__links" href="">
+                        <div class="otherProjects__item">
+                            <h4 class="project__name">Back To The Youth</h4>
+                            <p class="project__author">Louis Vachon</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
    
     </main>
 
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

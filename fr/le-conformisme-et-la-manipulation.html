@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -69,49 +75,80 @@
      
     </header>
 
-    <main>
-        <img src="../assets/images/Article-5/image-1.webp" alt="Groupe de personnes identiques allant dans la même direction">
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-5/image-1.webp" alt="Groupe de personnes identiques allant dans la même direction">
 
-        <h1>Le conformisme et la manipulation</h1>
+        <h1 class="pageArticle__title">Le conformisme et la manipulation</h1>
         
         <div class="pageArticle__chapo">
-            <p>Le conformisme est présent partout, dans notre quotidien. C’est une sorte de pression sociale, de manipulation mentale, qui pousse les gens à faire quelque chose en fonction de la « normalité ».</p>
+            <p class="pageArticle__chapoText">Le conformisme est présent partout, dans notre quotidien. C’est une sorte de pression sociale, de manipulation mentale, qui pousse les gens à faire quelque chose en fonction de la « normalité ».</p>
         </div>
   
-        <article>
-          <h2>L’effet Asch</h2>
-          <p>Une étude très connue, de Solomon Asch, démontre à quel point le conformisme impacte nos vies. Faisant passer un test de vision à un groupe d’étudiants dont des complices et un unique sujet naïf, l’étude à pour but de voir comment ce dernier va agir face au comportement des autres participants.</p>
+        <article class="pageArticle__content">
+            
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">L’effet Asch</h2>
+              <p class="pageArticle__text">Une étude très connue, de Solomon Asch, démontre à quel point le <a class="internLink" href="glossaire.html">conformisme</a> impacte nos vies. Faisant passer un test de vision à un groupe d’étudiants dont des complices et un unique sujet naïf, l’étude à pour but de voir comment ce dernier va agir face au comportement des autres participants.</p>
+              <img class="pageArticle__image" src="../assets/images/Article-5/image-2.webp" alt="Exemple de l'étude de Solomon Asch">
+              <p class="pageArticle__text">La consigne est simple : une ligne modèle est donnée et il faut, parmi les trois choix proposés, déterminer quelle ligne est identique, puis laquelle est la plus longue ou la plus courte. Les complices donnent tous une mauvaise réponse, et le sujet naïf répond toujours en avant-dernière position.</p>
+                <p class="pageArticle__text">Lorsque les réponses sont différentes, le sujet répond sans problème, tandis que lorsqu’il y a unanimité de mauvaises réponses de la part des complices, le sujet a tendance à se conformer au reste du groupe, même s’il est évident à ses yeux que c’est faux. Certains allant même jusqu’à croire qu’ils ont un problème de vue.</p>
+          </div>
 
-          <img src="../assets/images/Article-5/image-2.webp" alt="Exemple de l'étude de Solomon Asch">
-
-          <p>La consigne est simple : une ligne modèle est donnée et il faut, parmi les trois choix proposés, déterminer quelle ligne est identique, puis laquelle est la plus longue ou la plus courte. Les complices donnent tous une mauvaise réponse, et le sujet naïf répond toujours en avant-dernière position. 
-
-            Lorsque les réponses sont différentes, le sujet répond sans problème, tandis que lorsqu’il y a unanimité de mauvaises réponses de la part des complices, le sujet a tendance à se conformer au reste du groupe, même s’il est évident à ses yeux que c’est faux. Certains allant même jusqu’à croire qu’ils ont un problème de vue.</p>
-
-            <h2>La peur du regard des autres</h2>
-            <p>Souvent inconsciemment, les gens se sentent obligés de faire quelque chose en fonction des autres. Si leur jugement entre en conflit avec la bienséance, ils s’effacent, pour se conformer aux attentes de la société.
-                Ceux qui n’ont pas confiance en eux sont d’autant plus sensibles à cela, ils ont donc plus tendance à se conformer, n’assumant pas qui ils sont réellement.
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">La peur du regard des autres</h2>
+                <p class="pageArticle__text">Souvent inconsciemment, les gens se sentent obligés de faire quelque chose en fonction des autres. Si leur jugement entre en conflit avec la bienséance, ils s’effacent, pour se conformer aux attentes de la société.
+                    Ceux qui n’ont pas confiance en eux sont d’autant plus sensibles à cela, ils ont donc plus tendance à se conformer, n’assumant pas qui ils sont réellement.</p>
                 
-                Je regrette qu’il n’y ait pas plus de « facteur Cheval », de Eléonore Herreinstein, ou de professeur Keating. Parce que non seulement, je ne veux pas entrer dans ce conformisme, car je constate que beaucoup de personnes sont malheureuses. Elles ne se sont pas épanouies dans leur vie.
+                    <p class="pageArticle__text">Je regrette qu’il n’y ait pas plus de « facteur Cheval », de Eléonore Herreinstein, ou de professeur Keating. Parce que non seulement, je ne veux pas entrer dans ce conformisme, car je constate que beaucoup de personnes sont malheureuses. Elles ne se sont pas épanouies dans leur vie.</p>
                 
-                Je trouve donc qu’il est regrettable que tant de personnes se laissent modeler par le conformisme, parce que tant de choses évoluent avec le temps. Ce qui était mal vu au temps du facteur Cheval serait aujourd’hui l’œuvre d’un génie. Beaucoup craignent de s’affirmer alors que s’ils réalisaient leurs rêves ils passeraient peut-être pour des artistes demain.</p>
+                    <p class="pageArticle__text">Je trouve donc qu’il est regrettable que tant de personnes se laissent modeler par le conformisme, parce que tant de choses évoluent avec le temps. Ce qui était mal vu au temps du facteur Cheval serait aujourd’hui l’œuvre d’un génie. Beaucoup craignent de s’affirmer alors que s’ils réalisaient leurs rêves ils passeraient peut-être pour des artistes demain.</p>
+            </div>
 
 
         </article>
     </main>
 
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

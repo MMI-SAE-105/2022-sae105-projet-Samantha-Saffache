@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -69,106 +75,117 @@
      
     </header>
 
-    <main>
-        <img src="../assets/images/Article-4/image-1.webp" alt="Fan art du film Le Cercle des Poètes Disparus">
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-4/image-1.webp" alt="Fan art du film Le Cercle des Poètes Disparus">
 
-        <h1>Le Cercle des poètes disparus, une oeuvre cinématographique de renom</h1>
+        <h1 class="pageArticle__title">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</h1>
         
         <div class="pageArticle__chapo">
-            <p>Véritable succès du cinéma, “Le Cercle des poètes disparus” est un film culte des années 80 réalisé par Peter Weir.</p>
+            <p class="pageArticle__chapoText">Véritable succès du cinéma, “Le Cercle des poètes disparus” est un film culte des années 80 réalisé par Peter Weir.</p>
         </div>
   
-        <article>
-          <h2>Des jeunes qui subissent les ambitions de leurs parents</h2>
-          <p>C’est la rentrée à l’académie Welton, un établissement visant l’excellence et où les aspirations personnelles n’ont pas leur place, seuls faire carrière et viser le prestige des hautes fonctions comptent. Les nouveaux élèves sont inscrits ici par leurs parents qui ont déjà un destin tout tracé pour leurs enfants, des études à la carrière.</p>
+        <article class="pageArticle__content">
 
-          <h2>Un professeur atypique</h2>
-          <img src="../assets/images/Article-4/image-2.webp" alt="Monsieur Keating debout sur son bureau">
-          <p>Les élèves, dont nous suivons le destin, rencontrent M. Keating, nouveau professeur de littérature anglaise dans l’établissement. Cet homme se soucie de ses élèves, il veut les aider à s’épanouir, à réaliser leurs rêves, il les encourage également à refuser le conformisme. Au travers d’activités particulières, allant de monter sur les tables jusqu’à jouer au football, il leur enseigne chacun de ces principes, à sa façon. 
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Des jeunes qui subissent les ambitions de leurs parents</h2>
+              <p class="pageArticle__text">C’est la rentrée à l’académie Welton, un établissement visant l’excellence et où les aspirations personnelles n’ont pas leur place, seuls faire carrière et viser le prestige des hautes fonctions comptent. Les nouveaux élèves sont inscrits ici par leurs parents qui ont déjà un destin tout tracé pour leurs enfants, des études à la carrière.</p>
+          </div>
 
-            Sa vision de l’éducation est différente, il considère qu’elle vise à apprendre aux jeunes à penser par eux-mêmes. Dans ses cours, il essaie de leur faire prendre conscience que la vie passe vite et qu’il faut en profiter parce que tout le monde finira par mourir un jour, abordant ainsi la notion du Carpe Diem. Avec lui, les élèves apprennent à voir la poésie sous un autre angle. Progressivement, M. Keating va les guider à s’affranchir.
-            Dans une des scènes marquantes du film, il met en scène péril du conformisme qui n’est autre que la perte de ses convictions.</p>
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Un professeur atypique</h2>
+              <img class="pageArticle__image" src="../assets/images/Article-4/image-2.webp" alt="Monsieur Keating debout sur son bureau">
+              <p class="pageArticle__text">Les élèves, dont nous suivons le destin, rencontrent M. Keating, nouveau professeur de littérature anglaise dans l’établissement. Cet homme se soucie de ses élèves, il veut les aider à s’épanouir, à réaliser leurs rêves, il les encourage également à refuser le conformisme. Au travers d’activités particulières, allant de monter sur les tables jusqu’à jouer au football, il leur enseigne chacun de ces principes, à sa façon.</p>
+                <p class="pageArticle__text">Sa vision de l’éducation est différente, il considère qu’elle vise à apprendre aux jeunes à penser par eux-mêmes. Dans ses cours, il essaie de leur faire prendre conscience que la vie passe vite et qu’il faut en profiter parce que tout le monde finira par mourir un jour, abordant ainsi la notion du Carpe Diem. Avec lui, les élèves apprennent à voir la poésie sous un autre angle. Progressivement, M. Keating va les guider à s’affranchir.
+                Dans une des scènes marquantes du film, il met en scène péril du conformisme qui n’est autre que la perte de ses convictions.</p>
+                <img class="pageArticle__image" src="../assets/images/Article-4/image-3.webp" alt="Les élèves qui portent Monsieur Keating après un match de foot">
+                <p class="pageArticle__text">Au bout de quelques jours, les élèves découvrent dans les archives de l’école, que M. Keating était un ancien élève de Welton et qu’il était membre du cercle des poètes disparus. Intrigués, ils questionnent leur professeur à ce sujet, ce dernier leur explique vaguement que c’étaient de jeunes garçons qui se retrouvaient dans une vieille grotte pour lire de la poésie et « sucer la moelle secrète de la vie ».</p>
+                <p class="pageArticle__text">Les élèves vont ainsi recréer ce cercle, se réunissant eux-aussi, dans une grotte, la nuit. Ils doivent cependant le faire discrètement, puisqu’un couvre-feu est imposé par l’établissement. Ainsi, lors de leurs réunions secrètes, plusieurs trouvent le courage d’assumer leurs rêves et leurs convictions.</p>
+          </div>
 
-            <img src="../assets/images/Article-4/image-3.webp" alt="Les élèves qui portent Monsieur Keating après un match de foot">
-            <p>Au bout de quelques jours, les élèves découvrent dans les archives de l’école, que M. Keating était un ancien élève de Welton et qu’il était membre du cercle des poètes disparus. Intrigués, ils questionnent leur professeur à ce sujet, ce dernier leur explique vaguement que c’étaient de jeunes garçons qui se retrouvaient dans une vieille grotte pour lire de la poésie et « sucer la moelle secrète de la vie ».
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">Les conséquences</h2>
+                <img class="pageArticle__image" src="../assets/images/Article-4/image-4.webp" alt="Neil Perry jouant son rôle de théâtre">
+                <p class="pageArticle__text">Neil Perry, un des élèves, décide de réaliser son rêve de devenir acteur, en passant une audition pour une pièce de théâtre, dans laquelle il finit par décrocher le premier rôle. Cependant, son père a déjà planifié toute sa vie, il souhaite que son fils fasse médecine et refuse catégoriquement de le laisser vivre sa passion pour le théâtre. Neil, en dépit de l’avis de son père, joue tout de même sa pièce. Mais lorsque son père s’en rend compte et vient le voir en direct, il réagit très violemment et décide de retirer son fils de l’académie Welton, et de l’envoyer dans une école militaire. Neil ne voit aucun intérêt à vivre cette vie qu’il n’aura pas choisi. La nuit même il décide de mettre fin à ses jours.</p>
+                    <p class="pageArticle__text">Cette tragédie affecte terriblement ses parents ainsi que ses camarades. Par la suite, le directeur de l’académie Welton, cherchant à disculper son institution de tout doute quant à son bien-fondé, s’efforce de trouver un bouc-émissaire. C’est donc M. Keating qui se voit renvoyé à grand renfort de fausses déclarations des élèves subissant la pression de leurs parents et de la direction. Lors du départ du professeur, les élèves lui rendent tout de même un ultime hommage, bravant la discipline, témoignant ainsi qu’ils ont bien compris qu’ils doivent penser par eux-mêmes.</p>
+                
+                    <img class="pageArticle__image" src="../assets/images/Article-4/image-5.webp" alt="Les élèves de Monsieur Keating debouts sur leur table pour rendre hommage à leur professeur">
+            </div>
 
-                Les élèves vont ainsi recréer ce cercle, se réunissant eux-aussi, dans une grotte, la nuit. Ils doivent cependant le faire discrètement, puisqu’un couvre-feu est imposé par l’établissement. Ainsi, lors de leurs réunions secrètes, plusieurs trouvent le courage d’assumer leurs rêves et leurs convictions.</p>
-
-            <h2>Les conséquences</h2>
-            <img src="../assets/images/Article-4/image-4.webp" alt="Neil Perry jouant son rôle de théâtre">
-            <p>Neil Perry, un des élèves, décide de réaliser son rêve de devenir acteur, en passant une audition pour une pièce de théâtre, dans laquelle il finit par décrocher le premier rôle. Cependant, son père a déjà planifié toute sa vie, il souhaite que son fils fasse médecine et refuse catégoriquement de le laisser vivre sa passion pour le théâtre. Neil, en dépit de l’avis de son père, joue tout de même sa pièce. Mais lorsque son père s’en rend compte et vient le voir en direct, il réagit très violemment et décide de retirer son fils de l’académie Welton, et de l’envoyer dans une école militaire. Neil ne voit aucun intérêt à vivre cette vie qu’il n’aura pas choisi. La nuit même il décide de mettre fin à ses jours.
-
-                Cette tragédie affecte terriblement ses parents ainsi que ses camarades. Par la suite, le directeur de l’académie Welton, cherchant à disculper son institution de tout doute quant à son bien-fondé, s’efforce de trouver un bouc-émissaire. C’est donc M. Keating qui se voit renvoyé à grand renfort de fausses déclarations des élèves subissant la pression de leurs parents et de la direction. Lors du départ du professeur, les élèves lui rendent tout de même un ultime hommage, bravant la discipline, témoignant ainsi qu’ils ont bien compris qu’ils doivent penser par eux-mêmes.</p>
-            
-                <img src="../assets/images/Article-4/image-5.webp" alt="Les élèves de Monsieur Keating debouts sur leur table pour rendre hommage à leur professeur">
-
-                <h2>Une critique du conformisme</h2>
-                <p>On remarque rapidement que dans cette académie, on fait des élèves blasés, destinés à un avenir « ambitieux » qu’ils n’ont pas choisi, on fait en sorte qu’ils puissent rentrer dans les « moules » de la société. 
-
-                    Mais avec le professeur Keating, une nouvelle vision de la vie s’offre aux élèves. Ce film transmet un très beau message ainsi que de bonnes valeurs. Il fait vraiment réfléchir sur l’impact du conformisme.</p>
-
-                <h2>Filmographie de Peter Weir</h2>
-                <section>
-                    <div>
-
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">Une critique du conformisme</h2>
+                    <p class="pageArticle__text">On remarque rapidement que dans cette académie, on fait des élèves blasés, destinés à un avenir « ambitieux » qu’ils n’ont pas choisi, on fait en sorte qu’ils puissent rentrer dans les « moules » de la société.</p>
+                    <p class="pageArticle__text">Mais avec le professeur Keating, une nouvelle vision de la vie s’offre aux élèves. Ce film transmet un très beau message ainsi que de bonnes valeurs. Il fait vraiment réfléchir sur l’impact du conformisme.</p>
+                </div>
+                
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">Filmographie de Peter Weir</h2>
+    
+                    <div class="pageArticle__filmographie">
+                        <div class="pageArticle__filmographieSection">
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-1.webp" alt="Pique-nique à Hanging Rock">
+                                <p class="pageArticle__filmographieNom">Pique-nique à Hanging Rock</p>
+                                <p class="pageArticle__filmographieDate">1975</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-2.webp" alt="Witness">
+                                <p class="pageArticle__filmographieNom">Witness</p>
+                                <p class="pageArticle__filmographieDate">1985</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-3.webp" alt="Mosquito Coast">
+                                <p class="pageArticle__filmographieNom">Mosquito Coast</p>
+                                <p class="pageArticle__filmographieDate">1986</p>
+                                <br>
+                            </div>
+    
+    
+                        </div>
+                        <div class="pageArticle__filmographieSection">
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-4.webp" alt="Green Card">
+                                <p class="pageArticle__filmographieNom">Green Card</p>
+                                <p class="pageArticle__filmographieDate">1990</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-5.webp" alt="État second">
+                                <p class="pageArticle__filmographieNom">État second</p>
+                                <p class="pageArticle__filmographieDate">1993</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-6.webp" alt="The Truman Show">
+                                <p class="pageArticle__filmographieNom">The Truman Show</p>
+                                <p class="pageArticle__filmographieDate">1998</p>
+                                <br>
+                            </div>
+    
+    
+                        </div>
+                        <div class="pageArticle__filmographieSection">
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-7.webp" alt="Master and commander">
+                                <p class="pageArticle__filmographieNom">Master and commander</p>
+                                <p class="pageArticle__filmographieDate">2003</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-8.webp" alt="Les Chemins de la Liberté">
+                                <p class="pageArticle__filmographieNom">Les Chemins de la Liberté</p>
+                                <p class="pageArticle__filmographieDate">2010</p>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-9.webp" alt="Making Waves">
+                                <p class="pageArticle__filmographieNom">Making Waves</p>
+                                <p class="pageArticle__filmographieDate">2019</p>
+                                <br>
+                            </div>
+    
+                        </div>
                     </div>
-
-
-                    <div>
-
-                    </div>
-
-
-
-                    <div>
-
-                    </div>
+</div>
 
                 
-                </section>
 
-                <section>
-                    <div>
-
-                    </div>
-
-
-                    <div>
-
-                    </div>
-
-
-
-                    <div>
-
-                    </div>
-
-                
-                </section>  
-
-
-                <section>
-                    <div>
-
-                    </div>
-
-
-                    <div>
-
-                    </div>
-
-
-
-                    <div>
-
-                    </div>
-
-                
-                </section>
-
-                <img src="../assets/images/Article-4/image-6.webp" alt="Filmographie de Peter Weir">
-
-                <h2>Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                <h2 class="pageArticle__sousTitre">Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
                 <a class="pageArticle__link" href="https://www.youtube.com/watch?v=vw6Pc1irsb4">Extrait sur le conformisme dans le film</a>
 
 
@@ -176,17 +193,46 @@
     </main>
 
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

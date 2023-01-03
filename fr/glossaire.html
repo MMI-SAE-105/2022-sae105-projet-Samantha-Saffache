@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -70,39 +76,70 @@
     </header>
 
     
-    <main>
-        <h2>Glossaire</h2>
-        <dl>
-<dt>conformisme :</dt>
-    <dd>Tendance à se conformer aux usages, à accepter les manières de penser ou d'agir du plus grand nombre, les normes sociales.</dd>
-    
-   <dt>scénographie :</dt>
-        <dd>
+    <main class="main">
+        <h2 class="pageTitle__h2">Glossaire</h2>
+        <dl class="glossaire__item">
+<dt class="glossaire__mot">conformisme</dt>
+    <dd class="glossaire__definition">Tendance à se conformer aux usages, à accepter les manières de penser ou d'agir du plus grand nombre, les normes sociales.</dd>
+</dl>
+    <dl class="glossaire__item">
+   <dt class="glossaire__mot">scénographie</dt>
+        <dd class="glossaire__definition">
             Art de représenter en perspective.
             Art de concevoir les décors scéniques ; ces décors mêmes.
             Ensemble des éléments picturaux, plastiques et techniques qui permettent l'élaboration d'une mise en scène, notamment théâtrale, ou d'un spectacle quelconque.
             Aménagement expressif d'un espace architectural complexe.
         </dd>
+    </dl>
 
-
-    <dt>architecture naïve</dt>
-    <dd>L’architecture naïve ou environnements visionnaires désigne des constructions édifiées par des personnes autodidactes sans formation artistique.</dd>
+    <dl class="glossaire__item">
+    <dt class="glossaire__mot">architecture naïve</dt>
+    <dd class="glossaire__definition">L’architecture naïve ou environnements visionnaires désigne des constructions édifiées par des personnes autodidactes sans formation artistique.</dd>
 
     </dl>
     </main>
 
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

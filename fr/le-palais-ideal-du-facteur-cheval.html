@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -69,104 +75,123 @@
      
     </header>
 
-    <main>
+    <main class="main">
         <img class="pageArticle__mainImage" src="../assets/images/Article-1/image-1.webp" alt="le palais idéal du facteur cheval">
 
         <h1 class="pageArticle__title">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</h1>
         
         
         <div class="pageArticle__chapo">
-            <p>Lieu tout à fait insolite, le Palais Idéal est la réalisation d’un projet complètement fou, sorti tout droit du monde onirique de Joseph Ferdinand Cheval, un facteur devenu célèbre de par son œuvre tout simplement stupéfiante. </p>
+            <p class="pageArticle__chapoText">Lieu tout à fait insolite, le Palais Idéal est la réalisation d’un projet complètement fou, sorti tout droit du monde onirique de Joseph Ferdinand Cheval, un facteur devenu célèbre de par son œuvre tout simplement stupéfiante. </p>
         </div>
   
         <article class="pageArticle__content">
-          <h2 class="pageArticle__sousTitre">Un homme autodidacte</h2>
-          <p class="pageArticle__text">Né en 1836 à Charmes-sur-l’Herbasse, Joseph Ferdinand Cheval, issu d’une famille pauvre, 
-            quitte l’école à l’âge de 12 ans. Il se retrouve orphelin alors qu’il est encore mineur, puis plus tard il devient apprenti boulanger. 
-            
-            Après avoir été exempté de son service militaire, Joseph se marie à 22 ans. A la recherche de travail, il quitte Hauterives et devient, agriculteur, puis ouvrier boulanger. Son premier fils meurt à 1 an seulement, tandis que deux ans plus tard, naît son second fils Ferdinand Cyril. 
-            
-            C’est en 1867 que Joseph devient facteur, après un concours, mais malheureusement, quelques années plus tard, un nouvel évènement tragique survient dans sa vie : la mort de sa femme, âgée de 37 ans. Il se remarie 5 ans plus tard avec Claire-Philomène-Richaud, qui donne naissance à sa fille Alice-Marie-Philomène.
-            </p>
 
-            <h2 class="pageArticle__sousTitre">La genèse du projet</h2>
-            <p class="pageArticle__text">Tout a commencé lors d’une de ses tournées de travail : manquant de tomber en butant sur une pierre, le Facteur Cheval est alors attiré par la forme étrange de celle-ci, qu’il nomme “pierre d'achoppement". </p>
-            
-            <blockquote class="pageArticle__quote">“Puisque la nature veut faire la sculpture, je ferai la maçonnerie et l’architecture.”</blockquote>
-            
-            <p class="pageArticle__text">Trouvant le lendemain des pierres tout aussi belles, une idée germa dans son esprit, car, voyant que la nature sans avoir « appris » à sculpter, produit de si belles pierres, il pourrait lui-même aussi produire une œuvre architecturale alors qu’il n’a jamais étudié en ce sens.</p>
-            <p class="pageArticle__text">C’est ainsi qu’accompagné de sa brouette, le facteur Cheval ramasse quotidienne-
-                mentdes pierres singulières afin de
-                bâtir un palais imaginaire. Les 33
-                années de sa vie qu’il consacre à sa 
-                construction témoignent
-                de sa persévérance.</p>
-                <img class="pageArticle__image" src="../assets/images/Article-1/image-2.webp" alt="le facteur cheval">
-                <img  class="pageArticle__image"src="../assets/images/Article-1/image-3.webp" alt="le palais idéal">
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Un homme autodidacte</h2>
+              <p class="pageArticle__text">Né en 1836 à Charmes-sur-l’Herbasse, Joseph Ferdinand Cheval, issu d’une famille pauvre,
+                quitte l’école à l’âge de 12 ans. Il se retrouve orphelin alors qu’il est encore mineur, puis plus tard il devient apprenti boulanger. </p>
+              
+                <p class="pageArticle__text">Après avoir été exempté de son service militaire, Joseph se marie à 22 ans. A la recherche de travail, il quitte Hauterives et devient, agriculteur, puis ouvrier boulanger. Son premier fils meurt à 1 an seulement, tandis que deux ans plus tard, naît son second fils Ferdinand Cyril.</p>
+              
+                <p class="pageArticle__text">C’est en 1867 que Joseph devient facteur, après un concours, mais malheureusement, quelques années plus tard, un nouvel évènement tragique survient dans sa vie : la mort de sa femme, âgée de 37 ans. Il se remarie 5 ans plus tard avec Claire-Philomène-Richaud, qui donne naissance à sa fille Alice-Marie-Philomène. </p>
+              
+          </div>
 
-                <h class="pageArticle__sousTitre">Mais pourquoi un tel succès ?</h2>
-                <p class="pageArticle__text">Classé monument historique, ce palais contient toute une richesse de détails, on peut y voir des animaux, tout comme des créatures mythologiques, sans compter une architecture de tous les continents. Une fontaine, autrefois fonctionnelle, ainsi que la « pierre d’achoppe-
-                    ment », cette dernière étant à l’origine de cet édifice, font également partie du décor.</p>
-
-                    <img class="pageArticle__image" src="../assets/images/Article-1/image-4.webp" alt="sculptures de monuments sur le palais idéal du facteur cheval">
-
-                <p class="pageArticle__text">Le facteur Cheval a réussi l’incroyable exploit architectural d’intégrer à son palais imaginaire des grottes, des temples, une ébauche de la Maison Blanche, un chalet suisse ou encore une mosquée. Il a vraiment puisé dans différents styles et différentes époques.
-                    Peut-être cet homme rêvait-il de faire de grands voyages, de découvrir le monde, mais, ne le pouvant pas, il a probablement tenté d’amener ces paysages lointains à lui. 
-                    Il s’est inspiré du poème « Ton idéal, ton Palais » d’Emile Roux Parassac pour nommer son œuvre.
-                    . Il a d’ailleurs écrit lui-même des textes poétiques, visibles sur plusieurs façades de son Palais.
-                    </p>
-
-            <img class="pageArticle__image" src="../assets/images/Article-1/image-5.webp" alt="face sud du palais idéal"> <img src="../assets/images/Article-1/image-6.webp" alt="le palais idéal">
-          
-          <p class="pageArticle__text">« Travail d’un seul homme », c’est la signature d’un facteur exceptionnel ignorant tout de l’architecture, qui, pendant plus de trente ans, a dédié sa vie à la réalisation du Palais de ses rêves.
-            Son histoire a tellement marqué les esprits qu’elle est invoquée, dans la littérature, le cinéma, ou encore la chanson. C’est, pour les artistes, une façon de lui rendre hommage. 
-            </p>
-            
-            <p class="pageArticle__text">Par exemple le premier film lui étant consacré, est un documentaire court-métrage de Ado Kyrou, en 1958. Puis plus récemment, c’est Niels Tavernier qui met en scène son histoire dans le cinéma. </p>
-            <img  class="pageArticle__image"src="../assets/images/Article-1/image-7.webp" alt="L'Incroyable Histoire du facteur Cheval, Niels Tavernier, 2019.">
-            
-            <p class="pageArticle__text">Enfin, dans la peinture, on peut notamment retrouver un hommage de Picasso.</p>
-            <img class="pageArticle__image" src="../assets/images/Article-1/image-8.webp" alt="Peinture Le Facteur Cheval de Pablo Picasso">
-            <p class="pageArticle__text">Classé monument historique au titre de l’art naïf en 1969 par André Malraux, le Palais Idéal est selon lui, la seule architecture naïve au monde.
-
-                Le profil de cet homme correspond aux thèmes que je souhaitais aborder dans mon site. 
-                Je trouve son parcours très inspirant, il donne une leçon de vie intéressante. 
-                Son courage et sa patience sont remarquables, passer autant d’années à réaliser quelque chose de manière autodidacte est réellement impressionnant. D’autant plus que les gens de son époque le trouvaient excentrique, il devait probablement passer pour un illuminé pour certains, et ça ne l’a pas arrêté dans son élan pour autant, il avait un objectif et il souhaitait le réaliser jusqu’au bout. Ayant quitté ce monde il y a bientôt cent ans, le facteur Cheval, à l’histoire insolite, continue aujourd’hui de recevoir de la reconnaissance dans le monde entier.</p>
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">La genèse du projet</h2>
+                <p class="pageArticle__text">Tout a commencé lors d’une de ses tournées de travail : manquant de tomber en butant sur une pierre, le Facteur Cheval est alors attiré par la forme étrange de celle-ci, qu’il nomme “pierre d'achoppement". </p>
                 
-<section>
-    <h2 class="pageArticle__sousTitre">Lieux similaires</h2>
-    
-    <div class="pageArticle__friseImage"><img src="../assets/images/Article-1/image-9.webp" alt="le tombeau du facteur Cheval">
-        <p>Le tombeau du facteur Cheval</p>
-        <p>France</p>
-        <p>1922</p>
-    </div>
+                <blockquote class="pageArticle__quote">“Puisque la nature veut faire la sculpture, je ferai la maçonnerie et l’architecture.”</blockquote>
+                
+                <p class="pageArticle__text">Trouvant le lendemain des pierres tout aussi belles, une idée germa dans son esprit, car, voyant que la nature sans avoir « appris » à sculpter, produit de si belles pierres, il pourrait lui-même aussi produire une œuvre architecturale alors qu’il n’a jamais étudié en ce sens.
+                <div class="group">
+                    <p class="pageArticle__textFacteurCheval">C’est ainsi qu’accompagné de sa brouette, le facteur Cheval ramasse quotidienne-
+                        mentdes pierres singulières afin de
+                        bâtir un palais imaginaire. Les 33
+                        années de sa vie qu’il consacre à sa
+                        construction témoignent
+                        de sa persévérance.</p>
+                        <img class="pageArticle__imageFacteurCheval" src="../assets/images/Article-1/image-2.webp" alt="le facteur cheval">
+                </div>
+                    <img  class="pageArticle__image"src="../assets/images/Article-1/image-3.webp" alt="le palais idéal">
+            </div>
 
-    <div><img src="../assets/images/Article-1/image-10.webp" alt="les Temples de Khajuraho">
-        <p>les Temples de Khajuraho</p>
-        <p>Inde</p>
-        <p>1986</p>
-    </div>
-
-    <div><img src="../assets/images/Article-1/image-11.webp" alt="Le Temple d’Angkor Vat">
-        <p>Le Temple d’Angkor Vat</p>
-        <p>Cambodge</p>
-        <p>XIIe siècle</p>
-    </div>
-
-    <div><img src="../assets/images/Article-1/image-12.webp" alt="Le Temple de Kandariya Mahadeva">
-        <p>Le Temple de Kandariya Mahadeva</p>
-        <p>Inde</p>
-        <p>XIe siècle</p>
-    </div>
-
-    <div><img src="../assets/images/Article-1/image-13.webp" alt="Le temple de Banteay Srei">
-        <p>Le temple de Banteay Srei</p>
-        <p>Cambodge</p>
-        <p>Xe siècle</p>
-    </div>
-
-</section>
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">Mais pourquoi un tel succès ?</h2>
+                    <p class="pageArticle__text">Classé monument historique, ce palais contient toute une richesse de détails, on peut y voir des animaux, tout comme des créatures mythologiques, sans compter une architecture de tous les continents. Une fontaine, autrefois fonctionnelle, ainsi que la « pierre d’achoppe-
+                        ment », cette dernière étant à l’origine de cet édifice, font également partie du décor.</p>
+                        <img class="pageArticle__image" src="../assets/images/Article-1/image-4.webp" alt="sculptures de monuments sur le palais idéal du facteur cheval">
+                    <p class="pageArticle__text">Le facteur Cheval a réussi l’incroyable exploit architectural d’intégrer à son palais imaginaire des grottes, des temples, une ébauche de la Maison Blanche, un chalet suisse ou encore une mosquée. Il a vraiment puisé dans différents styles et différentes époques.</p>                    
+                    
+                    <p class="pageArticle__text">Peut-être cet homme rêvait-il de faire de grands voyages, de découvrir le monde, mais, ne le pouvant pas, il a probablement tenté d’amener ces paysages lointains à lui.</p>
+                        <p p class="pageArticle__text">
+                            Il s’est inspiré du poème « Ton idéal, ton Palais » d’Emile Roux Parassac pour nommer son œuvre.
+                            Il a d’ailleurs écrit lui-même des textes poétiques, visibles sur plusieurs façades de son Palais.
+                        </p>
+                        
+                    
+                                <img class="pageArticle__image" src="../assets/images/Article-1/image-5.webp" alt="face sud du palais idéal"> <img src="../assets/images/Article-1/image-6.webp" alt="le palais idéal">
+                              
+                              <p class="pageArticle__text">« Travail d’un seul homme », c’est la signature d’un facteur exceptionnel ignorant tout de l’architecture, qui, pendant plus de trente ans, a dédié sa vie à la réalisation du Palais de ses rêves.</p>
+                                <p class="pageArticle__text">Son histoire a tellement marqué les esprits qu’elle est invoquée, dans la littérature, le cinéma, ou encore la chanson. C’est, pour les artistes, une façon de lui rendre hommage. </p>
+                                
+                                
+                                <p class="pageArticle__text">Par exemple le premier film lui étant consacré, est un documentaire court-métrage de Ado Kyrou, en 1958. Puis plus récemment, c’est Niels Tavernier qui met en scène son histoire dans le cinéma. </p>
+                                <img  class="pageArticle__image"src="../assets/images/Article-1/image-7.webp" alt="L'Incroyable Histoire du facteur Cheval, Niels Tavernier, 2019.">
+                                
+                                <p class="pageArticle__text">Enfin, dans la peinture, on peut notamment retrouver un hommage de Picasso.</p>
+                                <img class="pageArticle__image" src="../assets/images/Article-1/image-8.webp" alt="Peinture Le Facteur Cheval de Pablo Picasso">
+                                <p class="pageArticle__text">Classé monument historique au titre de l’art naïf en 1969 par André Malraux, le Palais Idéal est selon lui, la seule <a class="internLink" href="glossaire.html">architecture naïve</a> au monde.</p>
+                    <p class="pageArticle__text">
+                        Le profil de cet homme correspond aux thèmes que je souhaitais aborder dans mon site.
+                        Je trouve son parcours très inspirant, il donne une leçon de vie intéressante.
+                    </p>
+                    <p class="pageArticle__text">Son courage et sa patience sont remarquables, passer autant d’années à réaliser quelque chose de manière autodidacte est réellement impressionnant. D’autant plus que les gens de son époque le trouvaient excentrique, il devait probablement passer pour un illuminé pour certains, et ça ne l’a pas arrêté dans son élan pour autant, il avait un objectif et il souhaitait le réaliser jusqu’au bout. Ayant quitté ce monde il y a bientôt cent ans, le facteur Cheval, à l’histoire insolite, continue aujourd’hui de recevoir de la reconnaissance dans le monde entier.</p>
+                </div>
+            
+      <div class="pageArticle__paragraphe">
+          <h2 class="pageArticle__sousTitre">Lieux similaires</h2>  
+          <section class="frise">
+              
+              
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-9.webp" alt="le tombeau du facteur Cheval">
+            <p class="pageArticle__friseNom">Le tombeau du facteur Cheval</p>
+            <p class="pageArticle__friseLieu">France</p>
+            <p class="pageArticle__friseDate">1922</p>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-10.webp" alt="les Temples de Khajuraho">
+            <p class="pageArticle__friseNom">les Temples de Khajuraho</p>
+            <p class="pageArticle__friseLieu">Inde</p>
+            <p class="pageArticle__friseDate">1986</p>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-11.webp" alt="Le Temple d’Angkor Vat">
+            <p class="pageArticle__friseNom">Le Temple d’Angkor Vat</p>
+            <p class="pageArticle__friseLieu">Cambodge</p>
+            <p class="pageArticle__friseDate">XIIe siècle</p>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-12.webp" alt="Le Temple de Kandariya Mahadeva">
+            <p class="pageArticle__friseNom">Le Temple de Kandariya Mahadeva</p>
+            <p class="pageArticle__friseLieu">Inde</p>
+            <p class="pageArticle__friseDate">XIe siècle</p>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-13.webp" alt="Le temple de Banteay Srei">
+            <p class="pageArticle__friseNom">Le temple de Banteay Srei</p>
+            <p class="pageArticle__friseLieu">Cambodge</p>
+            <p class="pageArticle__friseDate">Xe siècle</p>
+              </div>
+          
+          </section>
+      </div>
 
 
             <h2 class="pageArticle__sousTitre">Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
@@ -177,17 +202,46 @@
     </main>
     
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

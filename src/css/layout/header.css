@@ -3,7 +3,7 @@
     background: #EFF1ED;
     justify-content: space-between;
     display: flex;
-    padding: 10px 20px;
+    padding: 15px 30px;
     align-items: center;
 }
 
@@ -14,9 +14,7 @@
 
 /*Bouton du menu*/
 .header__menuBtn {
-    position: relative;
-    z-index: 10;
-    float: left;
+   
     justify-content: space-between;
     color: #31437F;
     background: none;

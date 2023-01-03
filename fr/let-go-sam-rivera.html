@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -70,80 +76,118 @@
     </header>
 
 
-    <main>
-        <img src="../assets/images/Article-3/image-1.webp" alt="le single Let Go de Sam Rivera">
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-3/image-1.webp" alt="le single Let Go de Sam Rivera">
 
-        <h1>Let Go de Sam Rivera, le passé sombre d’une vie</h1>
+        <h1 class="pageArticle__title">Let Go de Sam Rivera, le passé sombre d’une vie</h1>
         
         <div class="pageArticle__chapo">
-            <p>Sam Rivera (Samuel Benjamin Rivera) est un jeune auteur-compositeur interprète de musique pop et R&B chrétienne qui vit à Portland. Enfant de pasteur, il s’est fait connaître en publiant des covers sur sa chaîne YouTube, mais derrière son succès se cache un lourd passé. “Let Go”, un de ses singles sorti cette année, fait référence à sa vie, c’est ce que nous allons découvrir.</p>
+            <p class="pageArticle__chapoText">Sam Rivera (Samuel Benjamin Rivera) est un jeune auteur-compositeur interprète de musique pop et R&B chrétienne qui vit à Portland. Enfant de pasteur, il s’est fait connaître en publiant des covers sur sa chaîne YouTube, mais derrière son succès se cache un lourd passé. “Let Go”, un de ses singles sorti cette année, fait référence à sa vie, c’est ce que nous allons découvrir.</p>
         </div>
   
-        <article>
-          <h2>Une période sombre</h2>
-          <img src="../assets/images/Article-3/image-2.webp" alt="Sam Rivera en concert">
+        <article class="pageArticle__content">
 
-          <blockquote> <img src="../assets/icones/music-1.svg" alt="icone musique"> « Feels like I spent my whole life
-            Tryna be someone who I'm not inside »</blockquote>
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Une période sombre</h2>
+              <img class="pageArticle__largeImage"  src="../assets/images/Article-3/image-2.webp" alt="Sam Rivera en concert">
+              <div class="pageArticle__music">
+                  <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                  <blockquote class="pageArticle__musicQuote">  « Feels like I spent my whole life,
+                    Tryna be someone who I'm not inside »</blockquote>
+              </div>
+              <p class="pageArticle__text">Ayant grandi à l’église toute sa vie, Sam participait aux chants du culte dès ses 15 ans, mais pour lui, ce n'était jamais une véritable louange. Au bout d’un moment, il détestait chanter à l'église et faisait tout pour éviter ces moments.</p>
+                <p class="pageArticle__text">Sam voyait beaucoup de miracles autour de lui mais n’avait jamais rien expérimenté lui-même avec Dieu. Il a donc commencé à remettre sa foi en question, puis, au lycée, il a arrêté de croire en Dieu et a connu de mauvaises fréquentations.</p>
+              
+                <img class="pageArticle__largeImage" src="../assets/images/Article-3/image-3.webp" alt="Sam Rivera dans un champ">
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« This pleasure is poison,
+                        I’m high then I’m falling,
+                        Everytime it leaves me low »</blockquote>
+                </div>
+                <p class="pageArticle__text">Sam a ensuite développé une dépression et il a commencé à consommer des drogues pour s’évader de la réalité. Il avait l’impression de n’avoir aucun but sur cette terre, mais en plus, il se sentait très honteux d’avoir un tel comportement, tout en étant le fils d’un pasteur. Puis il a commencé à avoir une nouvelle addiction : l’automutilation. Mais Sam ne s’est pas arrêté là, puisqu’il a également tenté de se suicider deux fois.</p>
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« I was playing with fire,
+                        Said I’m fine but I lied »</blockquote>
+                </div>
+              
+                <p class="pageArticle__text">Lorsque sa mère et son frère ont appris qu’il se mutilait, ils ont pleuré et étaient tellement bouleversés, c’était très difficile pour Sam de les voir dans cet état. Par la suite, il mentait à sa famille, leur disant qu’il allait mieux.</p>
+          </div>
 
-          <p>Ayant grandi à l’église toute sa vie, Sam participait aux chants du culte dès ses 15 ans, mais pour lui, ce n'était jamais une véritable louange. Au bout d’un moment, il détestait chanter à l'église et faisait tout pour éviter ces moments.
-
-            Sam voyait beaucoup de miracles autour de lui mais n’avait jamais rien expérimenté lui-même avec Dieu. Il a donc commencé à remettre sa foi en question, puis, au lycée, il a arrêté de croire en Dieu et a connu de mauvaises fréquentations. 
-            </p>
-
-            <img src="../assets/images/Article-3/image-3.webp" alt="Sam Rivera dans un champ">
-            <blockquote><img src="../assets/icones/music-1.svg" alt="icone musique">« This pleasure is poison 
-                I’m high then I’m falling
-                Everytime it leaves me low »</blockquote>
-
-            <p>Sam a ensuite développé une dépression et il a commencé à consommer des drogues pour s’évader de la réalité. Il avait l’impression de n’avoir aucun but sur cette terre, mais en plus, il se sentait très honteux d’avoir un tel comportement, tout en étant le fils d’un pasteur. Puis il a commencé à avoir une nouvelle addiction : l’automutilation. Mais Sam ne s’est pas arrêté là, puisqu’il a également tenté de se suicider deux fois.</p>
-
-            <blockquote><img src="../assets/icones/music-1.svg" alt="icone musique">« I was playing with fire
-                Said I’m fine but I lied »</blockquote>
-            
-            <p>Lorsque sa mère et son frère ont appris qu’il se mutilait, ils ont pleuré et étaient tellement bouleversés, c’était très difficile pour Sam de les voir dans cet état. Par la suite, il mentait à sa famille, leur disant qu’il allait mieux.</p>
-
-            <h2>La délivrance</h2>
-            <img src="../assets/images/Article-3/image-4.webp" alt="Sam Rivera à la plage">
-
-            <blockquote><img src="../assets/icones/music-1.svg" alt="icone musique">« I gotta let go it’s causing pain inside 
-
-                It’s all that I know, yeah, I’m losing my mind
-                I know that I’ll die if you’re not by my side »</blockquote>
-
-            <p>Un jour, Sam était seul à la maison, et alors qu’il était sur le point de se suicider avec une lame de rasoir, le piano poussiéreux de sa chambre a attiré son attention, comme si quelque chose y brillait, alors qu’il faisait pourtant sombre. 
-
-                Il a donc commencé automatiquement à jouer et chanter un titre de Todd Dulaney : Victory Belongs to Jesus. Jamais il n’avait rendu un culte ainsi, et il a ressenti une paix immense, un amour inconditionnel qu’il n’avait jamais ressenti auparavant. Il en pleurait, et c’est là qu’il a été délivré de tout par Jésus : de la dépression, de la toxicomanie, de l’automutilation et du suicide. 
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">La délivrance</h2>
+                <img class="pageArticle__grandeImage" src="../assets/images/Article-3/image-4.webp" alt="Sam Rivera à la plage">
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« I gotta let go it’s causing pain inside,
+                        It’s all that I know, yeah, I’m losing my mind,
+                        I know that I’ll die if you’re not by my side »</blockquote>
+                </div>
+                <p class="pageArticle__text">Un jour, Sam était seul à la maison, et alors qu’il était sur le point de se suicider avec une lame de rasoir, le piano poussiéreux de sa chambre a attiré son attention, comme si quelque chose y brillait, alors qu’il faisait pourtant sombre.</p>
+                    <p class="pageArticle__text">Il a donc commencé automatiquement à jouer et chanter un titre de Todd Dulaney : Victory Belongs to Jesus. Jamais il n’avait rendu un culte ainsi, et il a ressenti une paix immense, un amour inconditionnel qu’il n’avait jamais ressenti auparavant. Il en pleurait, et c’est là qu’il a été délivré de tout par Jésus : de la dépression, de la toxicomanie, de l’automutilation et du suicide.</p>
                 
-                Depuis ce jour, il ne cesse de grandir spirituellement, et le culte est devenu pour lui comme une addiction, un moment d’évasion où il peut courir à chaque fois, qu’il soit heureux ou triste. Sa vie a été complètement transformée, il a donné pleinement sa vie à Christ.
-                </p>
+                    <p class="pageArticle__text">Depuis ce jour, il ne cesse de grandir spirituellement, et le culte est devenu pour lui comme une addiction, un moment d’évasion où il peut courir à chaque fois, qu’il soit heureux ou triste. Sa vie a été complètement transformée, il a donné pleinement sa vie à Christ.</p>
+                
+            </div>
 
-            <h2>Une vie nouvelle</h2>
-            <img src="../assets/images/Article-3/image-5.webp" alt="Sam Rivera en concert">
-
-            <p>Aujourd’hui âgé de 22 ans, Sam Rivera travaille de sa passion. Avec la musique, il peut exprimer ses émotions, il écrit des chansons sur ce qu’il a traversé et souhaite motiver les jeunes à se rapprocher de Christ.
-
-                Il y a, sur ses bras, 27 cicatrices qu’il s’est faites en se mutilant. Sam les a couvertes de tatouages avec des versets bibliques, ce sont comme des rappels afin de ne plus jamais recommencer. 
-                Let Go parle donc de lâcher prise, d’un homme souffrant de nombreux vices qui a donné sa vie à Dieu et qui a été totalement transformé en le louant.</p>
             
-             <h2>Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
-             <a class="pageArticle__link" href="https://www.samriveramusic.com/">Site du chanteur Sam Rivera</a>
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">Une vie nouvelle</h2>
+                    <img class="pageArticle__largeImage" src="../assets/images/Article-3/image-5.webp" alt="Sam Rivera en concert">
+                    <p class="pageArticle__text">Aujourd’hui âgé de 22 ans, Sam Rivera travaille de sa passion. Avec la musique, il peut exprimer ses émotions, il écrit des chansons sur ce qu’il a traversé et souhaite motiver les jeunes à se rapprocher de Christ.</p>
+                        <p class="pageArticle__text">Il y a, sur ses bras, 27 cicatrices qu’il s’est faites en se mutilant. Sam les a couvertes de tatouages avec des versets bibliques, ce sont comme des rappels afin de ne plus jamais recommencer.</p>
+                        <p class="pageArticle__text">Let Go parle donc de lâcher prise, d’un homme souffrant de nombreux vices qui a donné sa vie à Dieu et qui a été totalement transformé en le louant.</p>
+                    
+                </div>
+                 <h2 class="pageArticle__sousTitre">Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                 <a class="pageArticle__link" href="https://www.samriveramusic.com/">Site du chanteur Sam Rivera</a>
+            
 
         </article>    
     </main>
     
     <footer class="footer" >
-        <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-        <p class="footer__backTopText">Retour en haut</p>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <script>
+            // Get the button
+            let mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
       
         
-        <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-            pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-            <div class="footer__social">
-        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-        <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+        <p class="footer__mentions">Projet réalisé dans le<br>
+            cadre d’un exercice<br>
+            pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <div class="footer__bottom">
+                <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                <div class="footer__social">
+                    <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                    <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                    <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
             </div>
         
     </footer>

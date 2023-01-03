@@ -15,25 +15,26 @@
 <body>
     <header class="header">
        
-        
 
-        <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen"
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
    
 
         <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <div class="menu__closeBtn" id="close-btn"><img class="menu__close" src="../assets/icones/cross.svg" alt="fermer"></div>
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
 
-            <ul class="menu__list">
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
                 
                 
-                    <div class="articles__section">
-                        <p class="menu__buttons">Articles</p>
+                    <ul class="articles__section">
+                    
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -41,27 +42,32 @@
                         <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
-                    </div>
+                    </ul>
                 
             
             
                 
                     <div class="other__section">
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="glossaire.html">Glossaire</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="a-propos.html">À propos</a></li> <br>
-                        <li class="menu__buttons"><a class="menu__buttonsText" href="autres-projets.html">Autres projets</a></li> <br>
-                    </div>
+                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
+                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
+                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
+                        </div>
                
                 
-            </ul>
+            </div>
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+            
         </nav>
 
         <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
 
         <div class="header__end">
-         <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
         </div>
         
 
@@ -70,42 +76,52 @@
     </header>
 
 
-    <main>
-        <img src="../assets/images/Article-2/image-1.webp" alt="le livre La Voleuse des Toits">
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-2/image-1.webp" alt="le livre La Voleuse des Toits">
 
-        <h1>La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</h1>
+        <h1 class="pageArticle__title">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</h1>
         
         <div class="pageArticle__chapo">
-            <p>“La Voleuse des Toits”, est un roman de fantasy young adult écrit par Laure Dargelos publié en auto-édition en 2019. Il s’agit de son tout premier roman. Née en 1991, l’autrice, auparavant juriste, consacre son temps à l’écriture. </p>
+            <p class="pageArticle__chapoText">“La Voleuse des Toits”, est un roman de fantasy young adult écrit par Laure Dargelos publié en auto-édition en 2019. Il s’agit de son tout premier roman. Née en 1991, l’autrice, auparavant juriste, consacre son temps à l’écriture. </p>
         </div>
   
-        <article>
-          <h2>Une réalité qui glace le sang</h2>
-          <p>L’histoire nous entraîne dans un univers dystopique, un monde imaginaire gouverné par l’Omega, personnage mystérieux et masqué, dont tout le monde ignore l’identité, ainsi que la Ligue Écarlate, une alliance entre les 12 familles les plus puissantes du royaume d’Orme. 
-            Dans ce régime tyrannique, où l'art, la littérature et la musique sont interdits, l’infraction de ces règles est passible de peine de mort.</p>
+        <article class="pageArticle__content">
 
-            <h2>Une héroïne rebelle</h2>
-            <p>Contre cette société répressive, Éléonore Herreinstein, jeune demoiselle issue de l’aristocratie, est prête à tout pour renverser le gouvernement. La nuit, elle devient Plume : déguisée en garçon, elle viole le couvre-feu et arpente les toits, tandis qu’elle risque de se faire prendre par la milice. En signe de protestation, la jeune fille en quête de liberté dessine d’immenses fresques sur le mur, afin de transmettre des messages. 
-                Mais lorsqu’un jeune héritier de la Ligue Écarlate lui demande sa main, son destin est bouleversé. D’autant plus que ce dernier a démasqué Éléonore au sujet de ses activités nocturnes.</p>
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Une réalité qui glace le sang</h2>
+              <p class="pageArticle__text">L’histoire nous entraîne dans un univers dystopique, un monde imaginaire gouverné par l’Omega, personnage mystérieux et masqué, dont tout le monde ignore l’identité, ainsi que la Ligue Écarlate, une alliance entre les 12 familles les plus puissantes du royaume d’Orme.</p>
+                <p class="pageArticle__text">Dans ce régime tyrannique, où l'art, la littérature et la musique sont interdits, l’infraction de ces règles est passible de peine de mort.</p>
+          </div>
 
-                <img src="../assets/images/Article-2/image-2.webp" alt="goodies La Voleuse des Toits">
-                <img src="../assets/images/Article-2/image-3.webp" alt="L'autrice Laure Dargelos">
-                <img src="../assets/images/Article-2/image-4.webp" alt="Marque page du personnage principal du livre">
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">Une héroïne rebelle</h2>
+                <p class="pageArticle__text">Contre cette société répressive, Éléonore Herreinstein, jeune demoiselle issue de l’aristocratie, est prête à tout pour renverser le gouvernement. La nuit, elle devient Plume : déguisée en garçon, elle viole le couvre-feu et arpente les toits, tandis qu’elle risque de se faire prendre par la milice. En signe de protestation, la jeune fille en quête de liberté dessine d’immenses fresques sur le mur, afin de transmettre des messages.</p>
+                    <p class="pageArticle__text">Mais lorsqu’un jeune héritier de la Ligue Écarlate lui demande sa main, son destin est bouleversé. D’autant plus que ce dernier a démasqué Éléonore au sujet de ses activités nocturnes.</p>
+                    <div class="image__block">
+                        <div class="pageArticle__imageGroup">
+                            <img class="pageArticle__image" src="../assets/images/Article-2/image-2.webp" alt="goodies La Voleuse des Toits">
+                            <img class="pageArticle__image" src="../assets/images/Article-2/image-3.webp" alt="L'autrice Laure Dargelos">
+                        </div>
+                        <img class="pageArticle__image" src="../assets/images/Article-2/image-4.webp" alt="Marque page du personnage principal du livre">
+                    </div>
+                
+            </div>
 
-            <h2>Un style d’écriture à couper le souffle</h2>
-            <p>S’il y a bien un livre que je me recommande de relire plus tard, c’est bien celui-ci, qui est mon roman préféré. Le thème du voyage dans le temps qui y est abordé est un sujet qui m’intéresse énormément. La plume de l’autrice est tout simplement magnifique, avec un vocabulaire très riche, sans compter l'intrigue qui était géniale. L’histoire est incroyablement bien ficelée.
-
-                Le royaume vit dans la manipulation, avec un régime politique oppressif. Parmi la population, il y a malgré tout des rebelles qui refusent de se soumettre à ce système corrompu. Ces opposants se battent pour la liberté du peuple, en dépit des conséquences fatales qui les menacent car de grandes inégalités se créent envers les Bas-Fonds et toutes formes d’expression y sont prohibées.
-                 
-                Ce roman ayant été autoédité, l’autrice a pu publier son œuvre telle qu’elle le souhaitait, avec une certaine liberté et sans les restrictions des maisons d’édition. Ce qui fait de “La Voleuse des Toits” un roman authentique.
-                </p>
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">Un style d’écriture à couper le souffle</h2>
+                <p class="pageArticle__text">S’il y a bien un livre que je me recommande de relire plus tard, c’est bien celui-ci, qui est mon roman préféré. Le thème du voyage dans le temps qui y est abordé est un sujet qui m’intéresse énormément. La plume de l’autrice est tout simplement magnifique, avec un vocabulaire très riche, sans compter l'intrigue qui était géniale. L’histoire est incroyablement bien ficelée.</p>
+                <p class="pageArticle__text">Le royaume vit dans la manipulation, avec un régime politique oppressif. Parmi la population, il y a malgré tout des rebelles qui refusent de se soumettre à ce système corrompu. Ces opposants se battent pour la liberté du peuple, en dépit des conséquences fatales qui les menacent car de grandes inégalités se créent envers les Bas-Fonds et toutes formes d’expression y sont prohibées.</p>
+                
+                <p class="pageArticle__text">Ce roman ayant été autoédité, l’autrice a pu publier son œuvre telle qu’elle le souhaitait, avec une certaine liberté et sans les restrictions des maisons d’édition. Ce qui fait de “La Voleuse des Toits” un roman authentique.</p>
+                
+            </div>
 
 
                 
 
                 <section x-data="{open:false}">
-                    <a href=""><p>lire un extrait</p></a> @click="open = !open"> 
-                    </button>
+                    <a class="extrait" @click="open = !open" href="">lire un extrait</a> 
+                  
                     <p class="extrait__text" x-show="open"> 
                         — Regarde autour de toi, mon enfant. Ne vois-tu pas à quel point le monde a besoin d’être changé ? 
                         
@@ -119,25 +135,54 @@
 
 
 
-                <h2>Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
-                <a class="pageArticle__link" href="https://www.lauredargelosauteur.fr/">Site de l’autrice Laure Dargelos</a>
+                <h2 class="pageArticle__sousTitre">Liens <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                <a class="pageArticle__link" href="https://www.lauredargelosauteur.fr/">Site de l’autrice Laure Dargelos</a><br>
                 <a class="pageArticle__link" href="https://www.youtube.com/watch?v=0UZhWMKcdPI">Bande annonce du livre</a>
                 
             </article>   
         </main> 
         
         <footer class="footer" >
-            <img class="footer_backTop" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut">
-            <p class="footer__backTopText">Retour en haut</p>
+            <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+            <script>
+                // Get the button
+                let mybutton = document.getElementById("myBtn");
+                
+                // When the user scrolls down 20px from the top of the document, show the button
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+            
+        
+            <p class="footer__name">
+                Samantha Saffache MMI 1 C2
+            </p>
+        
           
             
-            <p class="footer__text">Projet réalisé dans le cadre d’un exercice 
-                pédagogique au département <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
-                <div class="footer__social">
-            <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
-            <a class="footer__link" href="http://mmimontbeliard.com/"><img src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a> 
-            <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img src="../assets/icones/facebook.svg" alt="facebook"></a>
-            <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img src="../assets/icones/instagram.svg" alt="instagram"></a> 
+            <p class="footer__mentions">Projet réalisé dans le<br>
+                cadre d’un exercice<br>
+                pédagogique au département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                <div class="footer__bottom">
+                    <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                    <div class="footer__social">
+                        <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                    
                 </div>
             
         </footer>
