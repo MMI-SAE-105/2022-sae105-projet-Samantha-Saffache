@@ -51,7 +51,7 @@ color: #FFFFFF;
     margin-top: 10px;
     margin-left: -140px;
     margin-right: 59px;
-    margin-bottom: 150px;
+    margin-bottom: 84px;
 
     /* Small Text */
 
@@ -116,6 +116,7 @@ color: #FFFFFF;
 /* Réseaux sociaux du footer */
 .footer__social {
     fill: white;
+    margin-left: 189px;
     
 
 
@@ -124,13 +125,14 @@ color: #FFFFFF;
 .footer__icons {
    fill: white;
    
+   
 }
 
 .footer__bottom {
     display: flex;
-    margin-top: -234px;
-    margin-left: 164px;
+    margin-top: -158px;
+    margin-left: 78px;
     margin-right: 83px;
-    margin-bottom: 47px;
+    margin-bottom: -31px;
 
 }

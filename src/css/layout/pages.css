@@ -96,6 +96,14 @@ line-height: 100%;
     padding-top: 13px;
     text-align: left;
     margin: 0px;
+    /* Body 2 */
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 13px;
+line-height: 160%;
+/* or 21px */
 
 }
 
