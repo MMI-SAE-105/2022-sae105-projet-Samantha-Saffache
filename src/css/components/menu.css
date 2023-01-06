@@ -32,6 +32,7 @@ font-weight: 700;
 font-size: 14px;
 line-height: 100%;
 
+
 }
 
 .menu__item {
@@ -46,10 +47,12 @@ line-height: 100%;
   margin-top: 47px;
   margin-bottom: 31px;
   margin-right: 38px;
+  z-index: 2;
 
 }
 
 .other__section {
+  z-index: 1;
 
 }
 
@@ -89,11 +92,15 @@ text-transform: uppercase;
 
 color: #31437F;
   
+z-index: 2;
+
+margin-bottom: 15px;
 
 }
 
 .menu__list {
   padding-left: 0px;
+  z-index: 2;
 }
 
 .menu__buttonsText {
@@ -105,24 +112,23 @@ color: #31437F;
 
 .menu__closeBtn {
   position: absolute;
-  left: 0;
+ 
   right: 0;
   display: flex;
   justify-content: end;
+  z-index: 3;
+
+  background: none;
+  border: none;
+
+  margin-right: 14px;
+  margin-top: 14px;
   
 
 }
 
 .menu__close {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: 439px;
-  margin-right: 59px;
-  margin-top: 45px;
-  margin-bottom: 55px;
-  display: flex;
-  justify-content: space-between;
+ 
 
 
 }

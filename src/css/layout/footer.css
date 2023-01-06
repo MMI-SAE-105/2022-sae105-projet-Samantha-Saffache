@@ -48,17 +48,14 @@ color: #FFFFFF;
 
 .footer__mentions {
     text-align: left;
-    margin-top: 10px;
-    margin-left: -140px;
-    margin-right: 59px;
-    margin-bottom: 84px;
+    
 
     /* Small Text */
 
 font-family: 'Inter';
 font-style: normal;
 font-weight: 300;
-font-size: 12px;
+font-size: 11px;
 line-height: 110%;
 /* or 12px */
 
@@ -116,7 +113,10 @@ color: #FFFFFF;
 /* Réseaux sociaux du footer */
 .footer__social {
     fill: white;
-    margin-left: 189px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     
 
 
@@ -129,10 +129,21 @@ color: #FFFFFF;
 }
 
 .footer__bottom {
-    display: flex;
-    margin-top: -158px;
-    margin-left: 78px;
-    margin-right: 83px;
+   
+   
     margin-bottom: -31px;
+    height: 95px;
+width: 95px;
+
+
+
+}
+
+.footer__bottomGroup {
+    display: flex;
+    
+    gap: 24px;
+    flex-direction: row;
+    padding-bottom: 10px;
 
 }

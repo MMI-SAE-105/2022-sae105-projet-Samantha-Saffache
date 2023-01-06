@@ -1,3 +1,7 @@
+.body {
+    margin: 0;
+}
+
 .main {
     margin: 30px;
 }
@@ -31,10 +35,16 @@ align-items: center;
 }
 
 .welcome__block {
+    display: flex;
+    align-content: center;
     background: #587DCA;
     border-radius: 20px;
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-right: 25px;
+    padding-bottom: 13px;
 
 
     
@@ -242,6 +252,7 @@ color: #31437F;
 .video {
     
     height: 150px;
+    border-radius: 10px;
 }
 
 .microtrottoir__description {

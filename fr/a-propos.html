@@ -12,7 +12,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
    
 </head>
-<body>
+<body class="body">
     <header class="header">
        
 
@@ -87,7 +87,7 @@
 
 
     <h2 class="pageArticle__sousTitre">Mon interprétation du sujet</h2>
-    <p class="pageArticle__text">C’es ainsi que j’ai voulu créer « Ne m'oublie pas », le nom m'est venu à l'esprit car je voudrais dire à la future moi de ne pas oublier qui elle était, et les rêves qu'elle avait.</p>
+    <p class="pageArticle__text">C’est ainsi que j’ai voulu créer « Ne m'oublie pas », le nom m'est venu à l'esprit car je voudrais dire à la future moi de ne pas oublier qui elle était, et les rêves qu'elle avait.</p>
 
         <p class="pageArticle__text">
             J’aimerais que la future moi n'ait pas peur d'être elle-même, sans vouloir se conformer aux normes.
@@ -110,25 +110,27 @@
         </div>
 
            
-        <h2 class="form__title">Contactez-nous</h2>
-                <div>
-                    <form class="formulaire__contact" action="#" method="get">
+        <div class="formulaire">
+            <h2 class="form__title">Contactez-nous</h2>
+                    <div class="contact__form">
+                        <form class="formulaire__contact" action="#" method="get">
+                            <div class="formulaire__block">
+                            <label class="label" for="prénom">prénom</label>
+                            <input class="input__case" id="prénom" type="text">
+                        </div>
+            
                         <div class="formulaire__block">
-                        <label for="prénom">prénom</label>
-                        <input class="input__case" id="prénom" type="text">
+                            <label class="label" for="e-mail">e-mail*</label>
+                            <input class="input__case" id="e-mail" type="text">
+                        </div>
+                        <div class="formulaire__block">
+                            <label class="label" for="message">message</label>
+                            <textarea class="input__case" id="message"> </textarea>
+                        </div>
+                            <button class="formulaire__contactSendButton" type="submit">ENVOYER</button>
+                          </form>
                     </div>
-                    
-                    <div class="formulaire__block">
-                        <label for="e-mail">e-mail*</label>
-                        <input class="input__case" id="e-mail" type="text">
-                    </div>
-                    <div class="formulaire__block">
-                        <label for="message">message</label>
-                        <textarea class="input__case" id="message"> </textarea>
-                    </div>
-                        <button class="formulaire__contactSendButton" type="submit">ENVOYER</button>
-                      </form>
-                </div>
+        </div>
 
 
             

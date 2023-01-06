@@ -5,9 +5,12 @@
 .otherprojects__main {
     
     background-color: #587DCA;
+    margin-top: 0px;
+    margin-bottom: 0px;
     
     
     padding: 0;
+    padding-bottom: 30px;
 }
 
 .other__projects {
@@ -22,6 +25,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 20px;
 line-height: 100%;
+margin-top: 0px;
+padding-top: 30px;
 
 
 
@@ -173,7 +178,16 @@ flex-wrap: nowrap;
 align-items: center;
 }
 
+.formulaire__contact {
+    color: #B3B3B3;
+}
 
+.formulaire {
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+}
 
 .formulaire__block {
    /* Body 2 */
@@ -184,16 +198,18 @@ font-weight: 400;
 font-size: 13px;
 line-height: 160%;
 
-color: #212046;
-opacity: 0.3;
+color: #B3B3B3;
 
-opacity: 0.3;
 border-radius: 9px;
 margin-bottom: 21px;
+gap: 20px;
+display: flex;
 
 }
 
-
+.label {
+    color: #B3B3B3;
+}
 
 .formulaire__contactSendButton {
     background-color: #587DCA;
@@ -223,8 +239,8 @@ color: #FFFFFF;
 }
 
 .input__case {
-opacity: 0.3;
-border: 1px solid #000000;
+
+border: 1px solid #B3B3B3;
 border-radius: 9px;
 }
 
@@ -237,3 +253,4 @@ border-radius: 9px;
             line-height: 110%;
             color: #000000;
 }
+
