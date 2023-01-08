@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Me Not</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="../fr/index.html"><img src="../assets/icones/globe-1.svg" alt="language"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="close">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul>
+                            <li class="menu__item"><a class="menu__link" href="the-postman-chevals-ideal-palace.html">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits-the-self-published-novel-by-laure-dargelos.html">"La Voleuse des Toits", the self-published novel by Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-by-sam-rivera.html">Let Go by Sam Rivera, the dark past of a life</a></li>
+                            <li class="menu__item"><a class="menu__link" href="the-dead-poets-society.html">The Dead Poets Society, a renowned cinematic work</a></li>
+                            <li class="menu__item"><a class="menu__link" href="conformism-and-manipulation.html">Conformism and manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="being-truly-free-of-your-destiny.html">Being (truly) free of your destiny</a></li>
+                            <li class="menu__item"><a class="menu__link" href="discovering-the-works-of-set-designers.html">Discovering the works of set designers</a></li>
+                        </ul>
+                    </div>
+                    
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossary.html">GLOSSARY</a>
+                        <a class="menu__buttons" href="about.html">ABOUT</a>
+                        <a class="menu__buttons" href="other-projects.html">OTHER PROJECTS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header-en.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-1/image-1.webp" alt="le palais idéal du facteur cheval">
+
+        <h1 class="pageArticle__title">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</h1>
+        
+        
+        <div class="pageArticle__chapo">
+            <p class="pageArticle__chapoText">Very unusual place, the Postman Cheval’s Ideal Palace is the realization of a completely crazy project, straight out of the dream world of Joseph Ferdinand Cheval, a postman who became famous for his simply amazing work.</p>
+        </div>
+  
+        <article class="pageArticle__content">
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">A self-taught man</h2>
+              <p class="pageArticle__text">Born in 1836 in Charmes-sur-l’Herbasse (France), Joseph Ferdinand Cheval, from a poor family, left school at 12 years old. He finds himself orphaned while still a minor, then, later, he becomes a baker’s apprentice.</p>
+              
+                <p class="pageArticle__text">After being exempted from his military service, Joseph got married at 22 years old. In search of work, he leaves Hauterives and becomes a farmer, then a baker. His first son died when he was only 1 year old, while two years later, his second son Ferdinand Cyril was born.</p>
+              
+                <p class="pageArticle__text">In 1867, Joseph became a letter carrier after a contest, but unfortunately, a few years later, a new tragic event happened in his life: the death of his wife, aged 37. He remarried 5 years later with Claire-Philomène-Richaud, who gave birth to his daughter Alice-Marie-Philomène.</p>
+              
+          </div>
+
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">The genesis of the project</h2>
+                <p class="pageArticle__text">It all began during one of his working tours: almost falling when he came up against a stone, the Factor Cheval was then attracted by the strange shape of this one, which he named "stumbling stone".</p>
+                
+                <blockquote class="pageArticle__quote">"Since nature wants to do the scullputre, I will do the masonry and architecture."</blockquote>
+                
+                <p class="pageArticle__text">Finding the next day stones just as beautiful, an idea germinated in his mind, because, seeing that nature without having "learned" to sculpt, produces such beautiful stones, he could himself also produce an architectural work although he had never studied in this sense.</p>
+                <div class="group">
+                    <p class="pageArticle__textFacteurCheval">Thus, accompanied by his wheelbarrow, the letter carrier Cheval collects daily singular stones to build an imaginary palace. The 33 years of his life that he devoted to its construction testify to his perseverance.</p>
+                        <img class="pageArticle__imageFacteurCheval" src="../assets/images/Article-1/image-2.webp" alt="le facteur cheval">
+                </div>
+                    <img  class="pageArticle__image" src="../assets/images/Article-1/image-3.webp" alt="le palais idéal">
+            </div>
+
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">But why such a success?</h2>
+                    <p class="pageArticle__text">Classified as a historical monument, this palace contains a wealth of details, one can see animals, as well as mythological creatures, not to mention architecture from every continent. A fountain, once functional, as well as the "stumbling block", the latter being the origin of this building, are also part of the decor.</p>
+                        <img class="pageArticle__image" src="../assets/images/Article-1/image-4.webp" alt="sculptures de monuments sur le palais idéal du facteur cheval">
+                    <p class="pageArticle__text">The Postman Cheval achieved the incredible architectural feat of integrating caves, temples, a draft of the White House, a Swiss chalet and a mosque into his imaginary palace. He really drew from different styles and different eras.</p>                    
+                    
+                    <p class="pageArticle__text">Maybe this man dreamed of making great journeys, of discovering the world, but, unable to do so, he probably tried to bring these distant landscapes to him. </p>
+                        <p class="pageArticle__text">
+                          He was inspired by Emile Roux Parassac's poem "Ton idéal, ton Palais" to name his work.
+                          He also wrote poetic texts himself, which can be seen on several facades of his Palace.
+                          
+                        </p>
+                        
+                    
+                                <div class="pageArticle__palaisIdealGroup">
+                                  <img class="pageArticle__image" src="../assets/images/Article-1/image-5.webp" alt="face sud du palais idéal">
+                                  <img class="pageArticle__image" src="../assets/images/Article-1/image-6.webp" alt="le palais idéal">
+                                </div>
+                              
+                              <p class="pageArticle__text">"One man's work" is the signature of an exceptional letter carrier who knew nothing about architecture and who, for more than thirty years, dedicated his life to the realization of the Palace of his dreams.</p>
+                                <p class="pageArticle__text">His story has left such a mark on people's minds that she is invoked in literature, cinema, and even in song. It is, for the artists, a way to pay homage to him.</p>
+                                
+                                
+                                <p class="pageArticle__text">For example the first film dedicated to him is a short documentary by Ado Kyrou, in 1958. Then more recently, it is Niels Tavernier who stages his story in the cinema.</p>
+                                <img  class="pageArticle__image" src="../assets/images/Article-1/image-7.webp" alt="L'Incroyable Histoire du facteur Cheval, Niels Tavernier, 2019.">
+                                
+                                <p class="pageArticle__text">Finally, in the painting, we can find a tribute by Picasso.</p>
+                                <img class="pageArticle__image" src="../assets/images/Article-1/image-8.webp" alt="Peinture Le Facteur Cheval de Pablo Picasso">
+                                <p class="pageArticle__text">Classified as a historical monument for naive art in 1969 by André Malraux, the Ideal Palace is, according to him, the only  <a class="internLink" href="glossaire.html">naive architecture</a> in the world.</p>
+                    <p class="pageArticle__text">
+                      This man's profile corresponds to the themes I wanted to address in my site. I find his journey very inspiring, he gives an interesting life lesson. 
+                    </p>
+                    <p class="pageArticle__text">His courage and his patience are remarkable, to spend so many years to realize something in a self-taught way is really impressive. Especially since people of his time found him eccentric, he probably looked like a lunatic to some, but that didn't stop him in his tracks, he had a goal and he wanted to achieve it until the end. Having left this world almost a hundred years ago, the Postman Cheval, whose story is unusual, continues today to receive recognition throughout the world.</p>
+                </div>
+            
+      <div class="pageArticle__paragraphe">
+          <h2 class="pageArticle__sousTitre">Similar Places</h2>  
+          <div class="frise">
+              
+              <div class="line"> </div>
+
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-9.webp" alt="le tombeau du facteur Cheval">
+            <div class="pageArticle__friseText">
+              <p class="pageArticle__friseNom">The tomb of Postman Cheval</p>
+              <p class="pageArticle__friseLieu">France</p>
+              <p class="pageArticle__friseDate">1922</p>
+            </div>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-10.webp" alt="les Temples de Khajuraho">
+            <div class="pageArticle__friseText">
+              <p class="pageArticle__friseNom">Khajuraho Temples</p>
+              <p class="pageArticle__friseLieu">India</p>
+              <p class="pageArticle__friseDate">1986</p>
+            </div>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-11.webp" alt="Le Temple d’Angkor Vat">
+            <div class="pageArticle__friseText">
+              <p class="pageArticle__friseNom">Angkor Vat Temple</p>
+              <p class="pageArticle__friseLieu">Cambodia</p>
+              <p class="pageArticle__friseDate">12th century</p>
+            </div>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-12.webp" alt="Le Temple de Kandariya Mahadeva">
+            <div class="pageArticle__friseText">
+              <p class="pageArticle__friseNom">Kandariya Mahadeva Temple</p>
+              <p class="pageArticle__friseLieu">India</p>
+              <p class="pageArticle__friseDate">11th century</p>
+            </div>
+              </div>
+          
+              <div class="pageArticle_friseItem">
+            <img class="pageArticle__friseImage" src="../assets/images/Article-1/image-13.webp" alt="Le temple de Banteay Srei">
+            <div class="pageArticle__friseText">
+              <p class="pageArticle__friseNom">Banteay Srei Temple</p>
+              <p class="pageArticle__friseLieu">Cambodia</p>
+              <p class="pageArticle__friseDate">10th century</p>
+            </div>
+              </div>
+          
+            </div>
+      </div>
+
+
+            <h2 class="pageArticle__sousTitre">Links <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+            <a class="pageArticle__link" href="https://www.facteurcheval.com/"><p>The website of the historical monument « Le Palais Idéal du Facteur Cheval »</p></a>
+            <a class="pageArticle__link" href="https://www.explorgames.com/acitivities/la-quete-des-trois-geants/"><p>Website of the Explor Games®, "The Quest of the Three Giants" at the Ideal Palace of the Facteur Cheval</p></a>
+    
+        </article>
+    </main>
+    
+    <footer class="footer" >
+      <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+     
+      
+  
+      <p class="footer__name">
+          Samantha Saffache MMI 1 C2
+      </p>
+  
+    
+      
+      <div class="footer__bottomGroup">
+          <p class="footer__mentions">Projet réalisé dans le<br>
+              cadre d’un exercice<br>
+              pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+              <div class="footer__bottom">
+                  <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+              </div>
+                  <div class="footer__social">
+                      <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                      <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                      <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+          
+              </div>
+      </div>
+  
+      <script>
+         
+          let mybutton = document.getElementById("myBtn");
+          
+         
+          window.onscroll = function() {scrollFunction()};
+          
+          function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+              mybutton.style.display = "block";
+            } else {
+              mybutton.style.display = "none";
+            }
+          }
+          
+          
+          function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+          }
+          </script>
+      
+  </footer>
+  
+    
+
+
+</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Me Not</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="../fr/index.html"><img src="../assets/icones/globe-1.svg" alt="language"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="close">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul>
+                            <li class="menu__item"><a class="menu__link" href="the-postman-chevals-ideal-palace.html">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits-the-self-published-novel-by-laure-dargelos.html">"La Voleuse des Toits", the self-published novel by Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-by-sam-rivera.html">Let Go by Sam Rivera, the dark past of a life</a></li>
+                            <li class="menu__item"><a class="menu__link" href="the-dead-poets-society.html">The Dead Poets Society, a renowned cinematic work</a></li>
+                            <li class="menu__item"><a class="menu__link" href="conformism-and-manipulation.html">Conformism and manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="being-truly-free-of-your-destiny.html">Being (truly) free of your destiny</a></li>
+                            <li class="menu__item"><a class="menu__link" href="discovering-the-works-of-set-designers.html">Discovering the works of set designers</a></li>
+                        </ul>
+                    </div>
+                    
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossary.html">GLOSSARY</a>
+                        <a class="menu__buttons" href="about.html">ABOUT</a>
+                        <a class="menu__buttons" href="other-projects.html">OTHER PROJECTS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header-en.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-7/image-1.webp" alt="scénographie issue d'un ouvrage">
+
+        <div class="pageArticle__titleGroup">
+            <h1 class="pageArticle__titleSpecial">Discovering the works of set designers</h1>
+            <img class="pageArticle__imageSpecial" src="../assets/images/Article-7/image-2.webp" alt="Scenographics - Set Design & Papercraft Art: A New Graphic Design Approach">
+        </div>
+        
+        <div class="pageArticle__chapo">
+            <p class="pageArticle__chapoText">In the preface of this book (Scenographics - Set Design & Papercraft Art: A New Graphic Design Approach), Linnea Apelqvist, a young set designer and photo stylist, quotes Paul Valéry who said: "the greatest freedom is born of the greatest rigor". Through the hundreds of realizations included in this book, we discover the multiple facets of the set designer's job.</p>
+        </div>
+        
+  
+        <article class="pageArticle__content">
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">The Malmö Festival</h2>
+              
+              <div class="pageArticle__malmoGroup">
+                  <img class="pageArticle__malmoFestivalLongImage" src="../assets/images/Article-7/image-3.webp" alt="Malmö Festival">
+                  <div class="pageArticle__malmoFestivalImagesGroup">
+                      <img class="pageArticle__malmoFestivalImages" src="../assets/images/Article-7/image-4.webp" alt="Préparation des pièces pour former une énorme scénographie">
+                      <img class="pageArticle__malmoFestivalImages" src="../assets/images/Article-7/image-5.webp" alt="L'immense installation d'art dans le quartier">
+                  </div>
+              </div>
+              <p class="pageArticle__text">Here we can see a project developed for the 2014 Malmö Festival, a gigantic eight-day block party with over 1.5 million visitors. For the 30th anniversary, together with the agency SNASK, they wanted to make a huge art installation, with which visitors can interact, by riding on it, for example. The idea was to create something grand for the occasion, a kind of poster that visitors can be part of.</p>
+          </div>
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Table and Desk</h2>
+              <img class="pageArticle__image" src="../assets/images/Article-7/image-6.webp" alt="Table and desk">
+              <p class="pageArticle__text">This project is a collaboration between set designer Alice King and photographer Luke J Albert. Interestingly, the light from the lamp was represented by paint on an entire surface, depending on the camera angle, creating an illusion with a play of colors.</p>
+          </div>
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Real Life at Work</h2>
+              <div class="pageArticle__realLifeAtWorkGroup">
+                  <img class="pageArticle__image" src="../assets/images/Article-7/image-7.webp" alt="Real life at work">
+                  <img class="pageArticle__image" src="../assets/images/Article-7/image-8.webp" alt="L'installation de ce projet">
+              </div>
+              <p class="pageArticle__text">At the agency Wieden+Kennedy, a window was completely transformed, a project by Emily Forgot and Laurie D. It is a representation of office space in black and white, including paper and cardboard objects.</p>
+          </div>
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">A very varied art</h2>
+              <div class="pageArticle__4ScenographGroup">
+                  <div class="pageArticle__2ScenographGroup">
+                      <img class="pageArticle__squareImage" src="../assets/images/Article-7/image-9.webp" alt="Guerlain Beauty - Anna Lomax">
+                      <img class="pageArticle__squareImage" src="../assets/images/Article-7/image-11.webp" alt="Body Builder - Anna Lomax">
+                      
+                  </div>
+                  <div class="pageArticle__2ScenographGroup">
+                      <img class="pageArticle__squareImage" src="../assets/images/Article-7/image-10.webp" alt="World Cup - Adrian & Gidi">
+                      <img class="pageArticle__squareImage" src="../assets/images/Article-7/image-12.webp" alt="Order - Todd McLellan">
+                  </div>
+              </div>
+              <p class="pageArticle__text">There is a real artistic freedom, very complex, with a lot of possibilities and different styles. An immersive atmosphere is created by working with colors, textures, different materials, light, shapes, objects and especially people (with their clothing, accessories and make-up).</p>
+                <p class="pageArticle__text">
+                    To conceive these scenic spaces, in several dimensions, there is generally a whole collaboration of people. What is interesting is that these artistic representations are overflowing with originality, each of the elements is fascinating, and one wants to analyze all the details. Everything is set up to make the set visually appealing to the audience.</p>
+              
+                <p class="pageArticle__text">The <a class="internLink" href="glossaire.html">set designers</a> put a lot of emphasis on optical illusions, playing with gravity to give the impression that an object is floating in space. The projects are often used in commercial collaborations.</p>
+              
+                <p class="pageArticle__text">Set designers do not necessarily work in the field of theater or film. Indeed, this profession with infinite possibilities, also allows to elaborate shop windows, exhibitions, hotel lobbies, event decorations or even commercial spaces.</p>
+              
+                <p class="pageArticle__text">
+                    The set designers and photographers behind all these projects produce unusual works, most of them of a free artistic creativity.
+Being very creative, this type of art form inspires me a lot. It is really interesting to see the different productions inside this book. There are so many possibilities to create with absolutely everything, and always very original. I find this art atypical, the works are alive. The artists seem to really listen to their inspiration and their desires, they do not seem to conform to a very codified expression of their art.
+</p>
+              
+          </div>
+
+            <h2 class="pageArticle__sousTitre">Links <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+            <a class="pageArticle__link" href="http://www.linneaapelqvist.com/">Website of the set designer Linnea Apelqvist</a>
+
+          </article>
+        </main>
+
+        
+        <footer class="footer" >
+            <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+           
+            
+        
+            <p class="footer__name">
+                Samantha Saffache MMI 1 C2
+            </p>
+        
+          
+            
+            <div class="footer__bottomGroup">
+                <p class="footer__mentions">Projet réalisé dans le<br>
+                    cadre d’un exercice<br>
+                    pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                    <div class="footer__bottom">
+                        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                    </div>
+                        <div class="footer__social">
+                            <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                            <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                            <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
+                    </div>
+            </div>
+        
+            <script>
+               
+                let mybutton = document.getElementById("myBtn");
+                
+              
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+             
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+            
+        </footer>
+        
+</body>
+</html>

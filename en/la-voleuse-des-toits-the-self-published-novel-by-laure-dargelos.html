@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Me Not</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="../fr/index.html"><img src="../assets/icones/globe-1.svg" alt="language"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="close">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul>
+                            <li class="menu__item"><a class="menu__link" href="the-postman-chevals-ideal-palace.html">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits-the-self-published-novel-by-laure-dargelos.html">"La Voleuse des Toits", the self-published novel by Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-by-sam-rivera.html">Let Go by Sam Rivera, the dark past of a life</a></li>
+                            <li class="menu__item"><a class="menu__link" href="the-dead-poets-society.html">The Dead Poets Society, a renowned cinematic work</a></li>
+                            <li class="menu__item"><a class="menu__link" href="conformism-and-manipulation.html">Conformism and manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="being-truly-free-of-your-destiny.html">Being (truly) free of your destiny</a></li>
+                            <li class="menu__item"><a class="menu__link" href="discovering-the-works-of-set-designers.html">Discovering the works of set designers</a></li>
+                        </ul>
+                    </div>
+                    
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossary.html">GLOSSARY</a>
+                        <a class="menu__buttons" href="about.html">ABOUT</a>
+                        <a class="menu__buttons" href="other-projects.html">OTHER PROJECTS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header-en.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-2/image-1.webp" alt="le livre La Voleuse des Toits">
+
+        <h1 class="pageArticle__title">"La Voleuse des Toits", the self-published novel by Laure Dargelos</h1>
+        
+        <div class="pageArticle__chapo">
+            <p class="pageArticle__chapoText">"La Voleuse des Toits", is a young adult fantasy novel written by Laure Dargelos self-published in 2019. It is her very first novel. Born in 1991, the author, previously a lawyer, devotes her time to writing.</p>
+        </div>
+  
+        <article class="pageArticle__content">
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">A blood-curdling reality</h2>
+              <p class="pageArticle__text">The story takes us to a dystopian universe, an imaginary world governed by Omega, a mysterious masked character whose identity is unknown to everyone, and the Scarlet League, an alliance between the 12 most powerful families of the kingdom of Orme.</p>
+                <p class="pageArticle__text">In this tyrannical regime, where art, literature and music are forbidden, breaking the rules is punishable by death.</p>
+          </div>
+
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">A rebellious heroine</h2>
+                <p class="pageArticle__text">Against this repressive society, Éléonore Herreinstein, a young lady from the aristocracy, is ready to do anything to overthrow the government. At night, she becomes Plume: disguised as a boy, she violates the curfew and roams the rooftops, while she risks being caught by the militia. As a sign of protest, the young girl in search of freedom draws huge frescoes on the wall, in order to transmit messages. </p>
+                    <p class="pageArticle__text">But when a young heir of the Scarlet League asks for her hand, her destiny is upset, especially since he has unmasked Eleanor about her nocturnal activities.</p>
+                    <div class="image__block">
+                        <div class="pageArticle__imageGroup">
+                            <img class="pageArticle__voleuseDesToitsImage" src="../assets/images/Article-2/image-2.webp" alt="goodies La Voleuse des Toits">
+                            <img class="pageArticle__voleuseDesToitsImage" src="../assets/images/Article-2/image-3.webp" alt="L'autrice Laure Dargelos">
+                        </div>
+                        <img class="pageArticle__voleuseDesToitsLongImage" src="../assets/images/Article-2/image-4.webp" alt="Marque page du personnage principal du livre">
+                    </div>
+                
+            </div>
+
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">A breathtaking writing style</h2>
+                <p class="pageArticle__text">If there is one book that I recommend to myself to reread later, it is this one, which is my favorite novel. The theme of time travel is a subject that interests me a lot. The author's writing is simply beautiful, with a very rich vocabulary, not to mention the plot which was great. The story is incredibly well crafted.</p>
+                <p class="pageArticle__text">The kingdom lives in manipulation, with an oppressive political regime. Among the population, there are still rebels who refuse to submit to this corrupt system. These opponents fight for the freedom of the people, despite the fatal consequences that threaten them, as great inequalities are created in the Nether and all forms of expression are prohibited.</p>
+                
+                <p class="pageArticle__text">As this novel was self-published, the author was able to publish her work as she wished, with a certain freedom and without the restrictions of publishing houses. This makes "La Voleuse des Toits" an authentic novel.</p>
+                
+            </div>
+
+
+             <button class="extraitBtn" aria-controls="extraitNav" @click="extraitIsOpen = ! extraitIsOpen">lire un extrait</button>
+
+             <nav class="extrait" id="extraitNav" x-show="extraitIsOpen" x-transition.duration.500ms > 
+                <p class="extrait__text">
+                    « - Look around you, my child. Don't you see how much the world needs to be changed? His words had remained engraved in her memory as the image of that night when, for the first time, she had broken the ban to venture onto the roofs. Taking advantage of a broken window, the girl had slipped into the house of this old man whose crime was to possess books. 
+
+Under a slat of the floor, she had discovered one of these forbidden objects, forgotten by the militia in their haste to destroy these writings of the past. The owner had chosen to preserve this book at the risk of his life. At the time, she did not understand the magnitude of this cause. How could anyone sacrifice themselves for a simple book? It was nothing more than paper... As she leafed through the yellowed pages of the book, a certainty had come over her. A truth that was not based on any evidence and that no argument to the contrary could shake. The world had not always been like this. In the past, people were free to think and these lines are a testimony to that time. It was worth dying to preserve the memory. 
+
+Plume had vowed to continue this fight. Alone, she could do nothing against society and the scarlet rules. But there was a freedom that would never fade. The freedom to dream... She had become a rooftop thief who, at nightfall, used the darkness to steal a piece of hope from the government. A piece of starry sky that she would slip under her pillow and accompany her in each of her dreams. Escaping from the militia and their patrols, Plume would venture into the slums to draw huge chalk paintings on the dull walls. His ephemeral works would disappear in the rain or be erased by the militia in the morning. The most important thing was to convey a message: the promise that a better world was possible. »
+
+
+
+
+
+
+                
+                </p>
+             </nav>
+
+                   
+    
+
+                <h2 class="pageArticle__sousTitre">Links <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                <a class="pageArticle__link" href="https://www.lauredargelosauteur.fr/">Website of the author Laure Dargelos  </a><br>
+                <a class="pageArticle__link" href="https://www.youtube.com/watch?v=0UZhWMKcdPI">Trailer of the book</a>
+                
+            </article>   
+        </main> 
+        
+        <footer class="footer" >
+            <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+           
+            
+        
+            <p class="footer__name">
+                Samantha Saffache MMI 1 C2
+            </p>
+        
+          
+            
+            <div class="footer__bottomGroup">
+                <p class="footer__mentions">Projet réalisé dans le<br>
+                    cadre d’un exercice<br>
+                    pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                    <div class="footer__bottom">
+                        <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                    </div>
+                        <div class="footer__social">
+                            <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                            <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                            <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+                
+                    </div>
+            </div>
+        
+            <script>
+               
+                let mybutton = document.getElementById("myBtn");
+                
+            
+                window.onscroll = function() {scrollFunction()};
+                
+                function scrollFunction() {
+                  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    mybutton.style.display = "block";
+                  } else {
+                    mybutton.style.display = "none";
+                  }
+                }
+                
+              
+                function topFunction() {
+                  document.body.scrollTop = 0;
+                  document.documentElement.scrollTop = 0;
+                }
+                </script>
+            
+        </footer>
+
+   
+        
+
+
+     
+    
+
+</body>
+</html>

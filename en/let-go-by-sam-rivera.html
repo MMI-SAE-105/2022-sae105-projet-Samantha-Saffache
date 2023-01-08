@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Me Not</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="../fr/index.html"><img src="../assets/icones/globe-1.svg" alt="language"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="close">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul>
+                            <li class="menu__item"><a class="menu__link" href="the-postman-chevals-ideal-palace.html">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits-the-self-published-novel-by-laure-dargelos.html">"La Voleuse des Toits", the self-published novel by Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-by-sam-rivera.html">Let Go by Sam Rivera, the dark past of a life</a></li>
+                            <li class="menu__item"><a class="menu__link" href="the-dead-poets-society.html">The Dead Poets Society, a renowned cinematic work</a></li>
+                            <li class="menu__item"><a class="menu__link" href="conformism-and-manipulation.html">Conformism and manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="being-truly-free-of-your-destiny.html">Being (truly) free of your destiny</a></li>
+                            <li class="menu__item"><a class="menu__link" href="discovering-the-works-of-set-designers.html">Discovering the works of set designers</a></li>
+                        </ul>
+                    </div>
+                    
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossary.html">GLOSSARY</a>
+                        <a class="menu__buttons" href="about.html">ABOUT</a>
+                        <a class="menu__buttons" href="other-projects.html">OTHER PROJECTS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header-en.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-3/image-1.webp" alt="le single Let Go de Sam Rivera">
+
+        <h1 class="pageArticle__title">Let Go by Sam Rivera, the dark past of a life</h1>
+        
+        <div class="pageArticle__chapo">
+            <p class="pageArticle__chapoText">Sam Rivera (Samuel Benjamin Rivera) is a young Christian pop and R&B singer-songwriter living in Portland. A pastor's kid, he made a name for himself by posting covers on his YouTube channel, but behind his success lies a heavy past. "Let Go," one of his singles released this year, references his life, which is what we'll find out.</p>
+        </div>
+  
+        <article class="pageArticle__content">
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">A dark time</h2>
+              <img class="pageArticle__largeImage"  src="../assets/images/Article-3/image-2.webp" alt="Sam Rivera en concert">
+              <div class="pageArticle__music">
+                  <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                  <blockquote class="pageArticle__musicQuote">  « Feels like I spent my whole life,
+                    Tryna be someone who I'm not inside »</blockquote>
+              </div>
+              <p class="pageArticle__text">Growing up in church his whole life, Sam participated in worship songs from the time he was 15 years old, but for him it was never real worship. After a while, he hated singing in church and would do anything to avoid those moments.</p>
+                <p class="pageArticle__text">Sam saw many miracles around him but had never experienced anything with God himself. So he began to question his faith, and then in high school he stopped believing in God and got into bad company.</p>
+              
+                <img class="pageArticle__largeImage" src="../assets/images/Article-3/image-3.webp" alt="Sam Rivera dans un champ">
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« This pleasure is poison,
+                        I’m high then I’m falling,
+                        Everytime it leaves me low »</blockquote>
+                </div>
+                <p class="pageArticle__text">Sam then developed a depression and started using drugs to escape from reality. He felt like he had no purpose on this earth, but he also felt very ashamed of his behavior, even though he was a pastor's son. Then he started to have a new addiction: self-harm. But Sam didn't stop there, as he also attempted suicide twice.</p>
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« I was playing with fire,
+                        Said I’m fine but I lied »</blockquote>
+                </div>
+              
+                <p class="pageArticle__text">When his mother and brother found out he was mutilating himself, they cried and were so upset, it was very hard for Sam to see them like that. Afterwards, he would lie to his family, telling them he was getting better.</p>
+          </div>
+
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">La délivrance</h2>
+                <img class="pageArticle__grandeImage" src="../assets/images/Article-3/image-4.webp" alt="Sam Rivera à la plage">
+                <div class="pageArticle__music">
+                    <img class="pageArticle__musicIcon" src="../assets/icones/music-1.svg" alt="icone musique">
+                    <blockquote class="pageArticle__musicQuote">« I gotta let go it’s causing pain inside,
+                        It’s all that I know, yeah, I’m losing my mind,
+                        I know that I’ll die if you’re not by my side »</blockquote>
+                </div>
+                <p class="pageArticle__text">One day, Sam was home alone, and as he was about to commit suicide with a razor blade, the dusty piano in his room caught his attention, as if something was shining on it, although it was dark. </p>
+                    <p class="pageArticle__text">So he automatically started playing and singing a Todd Dulaney’s song: Victory Belongs to Jesus. He had never worshipped like this before, and he felt an immense peace, an unconditional love that he had never felt before. He cried, and it was there that he was delivered from everything by Jesus: from depression, from drug addiction, from self-harm and from suicide.</p>
+                
+                    <p class="pageArticle__text">Since that day, he has not stopped growing spiritually, and worship has become like an addiction for him, an escape moment where he can run every time, whether he is happy or sad. His life has been completely transformed, he has given his life fully to Christ.</p>
+                
+            </div>
+
+            
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">A new life</h2>
+                    <img class="pageArticle__largeImage" src="../assets/images/Article-3/image-5.webp" alt="Sam Rivera en concert">
+                    <p class="pageArticle__text">Now 22 years old, Sam Rivera works with his passion. With music he can express his emotions, he writes songs about what he has been through and wants to motivate young people to get closer to Christ.</p>
+                        <p class="pageArticle__text">There are 27 scars on his arms that he made while mutilating himself. Sam covered them with tattoos with Bible verses, they are like reminders to never do it again. </p>
+                        <p class="pageArticle__text">Let Go is about letting go, about a man suffering from many vices who gave his life to God and was totally transformed by praising him.</p>
+                    
+                </div>
+                 <h2 class="pageArticle__sousTitre">Links <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                 <a class="pageArticle__link" href="https://www.samriveramusic.com/">Singer Sam Rivera's website</a>
+            
+
+        </article>    
+    </main>
+    
+    <footer class="footer" >
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+       
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
+      
+        
+        <div class="footer__bottomGroup">
+            <p class="footer__mentions">Projet réalisé dans le<br>
+                cadre d’un exercice<br>
+                pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                <div class="footer__bottom">
+                    <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                </div>
+                    <div class="footer__social">
+                        <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+            
+                </div>
+        </div>
+    
+        <script>
+           
+            let mybutton = document.getElementById("myBtn");
+            
+           
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    </footer>
+    
+</body>
+</html>

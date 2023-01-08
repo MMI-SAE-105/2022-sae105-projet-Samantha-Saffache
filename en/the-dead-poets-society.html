@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forget Me Not</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="../fr/index.html"><img src="../assets/icones/globe-1.svg" alt="language"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="close">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul>
+                            <li class="menu__item"><a class="menu__link" href="the-postman-chevals-ideal-palace.html">Phenomenon of naive architecture : The Postman Cheval’s Ideal Palace</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits-the-self-published-novel-by-laure-dargelos.html">"La Voleuse des Toits", the self-published novel by Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-by-sam-rivera.html">Let Go by Sam Rivera, the dark past of a life</a></li>
+                            <li class="menu__item"><a class="menu__link" href="the-dead-poets-society.html">The Dead Poets Society, a renowned cinematic work</a></li>
+                            <li class="menu__item"><a class="menu__link" href="conformism-and-manipulation.html">Conformism and manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="being-truly-free-of-your-destiny.html">Being (truly) free of your destiny</a></li>
+                            <li class="menu__item"><a class="menu__link" href="discovering-the-works-of-set-designers.html">Discovering the works of set designers</a></li>
+                        </ul>
+                    </div>
+                    
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossary.html">GLOSSARY</a>
+                        <a class="menu__buttons" href="about.html">ABOUT</a>
+                        <a class="menu__buttons" href="other-projects.html">OTHER PROJECTS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header-en.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+    <main class="main">
+        <img class="pageArticle__mainImage" src="../assets/images/Article-4/image-1.webp" alt="Fan art du film Le Cercle des Poètes Disparus">
+
+        <h1 class="pageArticle__title">The Dead Poets Society, a renowned cinematic work</h1>
+        
+        <div class="pageArticle__chapo">
+            <p class="pageArticle__chapoText">True success of the cinema, "The Dead Poets Society" is a cult film of the 80s directed by Peter Weir.</p>
+        </div>
+  
+        <article class="pageArticle__content">
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">Youth who suffer from their parents' ambitions</h2>
+              <p class="pageArticle__text">It's the beginning of the school year at Welton Academy, an institution that strives for excellence and where personal aspirations have no place, only careers and the prestige of high office count. The new students are enrolled here by their parents who already have a destiny mapped out for their children, from studies to careers.</p>
+          </div>
+
+          <div class="pageArticle__paragraphe">
+              <h2 class="pageArticle__sousTitre">An atypical teacher</h2>
+              <img class="pageArticle__image" src="../assets/images/Article-4/image-2.webp" alt="Monsieur Keating debout sur son bureau">
+              <p class="pageArticle__text">The students, whose fate we follow, meet Mr. Keating, the school's new English literature teacher. This man cares about his students, he wants to help them to blossom, to realize their dreams, and he also encourages them to refuse conformity. He teaches them each of these principles in his own way, through activities ranging from climbing on tables to playing soccer. </p>
+                <p class="pageArticle__text">His vision of education is different; he sees it as teaching young people to think for themselves. In his classes, he tries to make them realize that life goes by quickly and that they should make the most of it because everyone will die one day, thus addressing the notion of Carpe Diem. With him, the students learn to see poetry in a different light. Gradually, Mr. Keating will guide them to freedom.
+                    In one of the film's most striking scenes, he portrays the peril of <a class="internLink" href="glossaire.html">conformity</a> which is nothing more than the loss of one's convictions.</p>
+                <img class="pageArticle__image" src="../assets/images/Article-4/image-3.webp" alt="Les élèves qui portent Monsieur Keating après un match de foot">
+                <p class="pageArticle__text">After a few days, the students discover in the school archives that Mr. Keating was a former student of Welton's and that he was a member of the Dead Poets Society. Intrigued, they ask their teacher about it, who vaguely explains that it was young boys who met in an old cave to read poetry and « suck out all the marrow of life ».</p>
+                <p class="pageArticle__text">The students will recreate this circle, meeting in a cave at night. However, they must do so discreetly, since a curfew is imposed by the school. Thus, during their secret meetings, many of them find the courage to assume their dreams and their convictions.</p>
+          </div>
+
+            <div class="pageArticle__paragraphe">
+                <h2 class="pageArticle__sousTitre">The consequences</h2>
+                <img class="pageArticle__image" src="../assets/images/Article-4/image-4.webp" alt="Neil Perry jouant son rôle de théâtre">
+                <p class="pageArticle__text">Neil Perry, one of the students, decides to fulfill his dream of becoming an actor by auditioning for a play, in which he ends up getting the lead role. However, his father has his whole life planned out, wants his son to go to medical school and refuses to let him pursue his passion for acting. Neil, in spite of his father's advice, performs his play anyway. But when his father realizes it and comes to see him live, he reacts very violently and decides to withdraw his son from the Welton Academy, and to send him to a military school. Neil does not see any interest in living this life that he will not have chosen. The same night he decides to put an end to his life.</p>
+                    <p class="pageArticle__text">This tragedy terribly affects his parents as well as his classmates. Afterwards, the principal of Welton Academy, seeking to clear his institution of any doubt as to its validity, tries to find a scapegoat. Mr. Keating is therefore dismissed with a lot of false statements from the students under pressure from their parents and the management. When the teacher leaves, the students pay him a final tribute, defying discipline and showing that they have understood that they must think for themselves. </p>
+                
+                    <img class="pageArticle__image" src="../assets/images/Article-4/image-5.webp" alt="Les élèves de Monsieur Keating debouts sur leur table pour rendre hommage à leur professeur">
+            </div>
+
+                <div class="pageArticle__paragraphe">
+                    <h2 class="pageArticle__sousTitre">A critique of conformism</h2>
+                    <p class="pageArticle__text">We quickly notice that in this academy, we make blasé students, destined for an "ambitious" future that they did not choose, we make sure that they can fit into the "molds" of society. </p>
+                    <p class="pageArticle__text">But with Professor Keating, a new vision of life is offered to the students. This film has a beautiful message and good values. It really makes you think about the impact of conformity.</p>
+                </div>
+                
+                
+                    <h2 class="pageArticle__sousTitre">Peter Weir's filmography</h2>
+        </article>            
+        </main>
+                    <div class="pageArticle__filmographie">
+                      
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-1.webp" alt="Pique-nique à Hanging Rock"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Picnic at Hanging Rock</p>
+                                    <p class="pageArticle__filmographieDate">1975</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-2.webp" alt="Witness"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Witness</p>
+                                    <p class="pageArticle__filmographieDate">1985</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-3.webp" alt="Mosquito Coast"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Mosquito Coast</p>
+                                    <p class="pageArticle__filmographieDate">1986</p>
+                                </div>
+                                <br>
+                            </div>
+    
+    
+                        
+                        
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-4.webp" alt="Green Card"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Green Card</p>
+                                    <p class="pageArticle__filmographieDate">1990</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-5-english.webp" alt="État second"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Fearless</p>
+                                    <p class="pageArticle__filmographieDate">1993</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-6.webp" alt="The Truman Show"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">The Truman Show</p>
+                                    <p class="pageArticle__filmographieDate">1998</p>
+                                </div>
+                                <br>
+                            </div>
+    
+    
+                      
+                       
+                           
+                                <div class="pageArticle__filmographieItem">
+                                    <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-7.webp" alt="Master and commander"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Master and commander</p>
+                                    <p class="pageArticle__filmographieDate">2003</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-8-english.webp" alt="Les Chemins de la Liberté"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">The Way Back</p>
+                                    <p class="pageArticle__filmographieDate">2010</p>
+                                </div>
+                            </div>
+                            <div class="pageArticle__filmographieItem">
+                                <div class="filmographie__align"><img class="pageArticle__filmographieImage" src="../assets/images/Article-4/filmographie-9.webp" alt="Making Waves"></div>
+                                <div class="pageArticle__filmographieText">
+                                    <p class="pageArticle__filmographieNom">Making Waves</p>
+                                    <p class="pageArticle__filmographieDate">2019</p>
+                                </div>
+                                <br>
+                            </div>
+    
+                       
+                    </div>
+</div>
+
+<div class="main">
+
+                
+
+                <h2 class="pageArticle__sousTitre">Links <img src="../assets/icones/external-link.svg" alt="lien externe"></h2>
+                <a class="pageArticle__link" href="https://www.youtube.com/watch?v=vw6Pc1irsb4">Excerpt about conformism in the film</a>
+
+
+
+</div>
+
+
+    <footer class="footer" >
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+       
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
+      
+        
+        <div class="footer__bottomGroup">
+            <p class="footer__mentions">Projet réalisé dans le<br>
+                cadre d’un exercice<br>
+                pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                <div class="footer__bottom">
+                    <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                </div>
+                    <div class="footer__social">
+                        <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+            
+                </div>
+        </div>
+    
+        <script>
+           
+            let mybutton = document.getElementById("myBtn");
+            
+         
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    </footer>
+    
+
+</body>
+</html>
