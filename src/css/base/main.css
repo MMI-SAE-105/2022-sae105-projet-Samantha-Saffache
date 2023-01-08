@@ -254,7 +254,8 @@ color: #31437F;
 
 .video {
     
-    height: 160px;
+    width: 100%;
+    height: auto;
     border-radius: 10px;
 }
 
