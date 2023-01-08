@@ -7,7 +7,7 @@
     color: #587DCA;
 
 font-family: Inter;
-font-size: 13px;
+font-size: 15px;
 font-weight: 700;
 line-height: 21px;
 letter-spacing: 0em;
@@ -214,12 +214,12 @@ color: #000000;
 
 .pageArticle__text {
 align-items: center;
-font-size: 13;
+
 
 font-family: 'Inter';
 font-style: normal;
 font-weight: 400;
-font-size: 13px;
+font-size: 15px;
 line-height: 160%;
 /* or 21px */
 
