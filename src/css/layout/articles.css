@@ -418,6 +418,7 @@
     padding-bottom: 20px; 
     gap: 9px;
     max-width: 458px;
+    justify-content: center;
 }
 
 .filmographie__align {
