@@ -1,39 +1,27 @@
+/*Body*/
 .body {
     margin: 0;
 }
 
+/*Marges de toutes les pages*/
 .main {
     margin: 30px;
 }
 
-.center__settings {
-display: flex;
-flex-direction: column;
-align-items: center;
-}
-
-
-
+/*Logo de landing page*/
 .welcome__logo {
-
     display: flex;
-    
     max-width: 100%;
     margin-bottom: 15px;
-
-
-
 }
 
+/*Visuel duotone*/
 .welcome__visual {
    max-width: 100%;
     border-radius: 20px;
-   
-
- 
-
 }
 
+/*Contour de visuel duotone*/
 .welcome__block {
     display: flex;
     align-content: center;
@@ -41,22 +29,13 @@ align-items: center;
     align-items: center;
     padding: 13px;
     border-radius: 25px;
-    background: #587DCA;
-    
-
-    
-
+    background: var(--dream);
 }
 
+/*Bienvenue*/
 .welcome {
-   
-    background-color: #31437F;
-    color: white;
-  
-    
-   
- 
-    
+    background-color: var(--starry);
+    color: var(--light);
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 25px;
@@ -67,30 +46,22 @@ align-items: center;
     vertical-align: middle;
     margin-top: 16px;
     margin-bottom: 23px;
-
     margin-left: 69px;
     margin-right: 69px;
-
     display: flex;
     justify-content: center;
 
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 110%;
-
-
-
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
 }
 
+/*Mot de bienvenue sur le site*/
 .welcome__description {
-    
-    background-color: #31437F;
-    color: white;
-    
+    background-color: var(--starry);
+    color: var(--light);
     padding-top: 2px;
     padding-bottom: 2px;
     padding-left: 15px;
@@ -100,43 +71,35 @@ line-height: 110%;
     text-align: center;
     vertical-align: middle;
 
-    /* Body 2 */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-
-
-    
-    
 }
 
 
-
-
-/*Page menu*/
+/*Lien de l'image d'article - landing page*/
 .article__imageLink {
-    max-width: 100%;
-    
-
-   
-   
-   
+    max-width: 100%;  
 }
 
+/*Image d'article - landing page*/
 .article__imageMenu {
     max-width: 100%;
-   
     border-radius: 20px;
+}
 
-  
+/*Lien de titre d'article - landing page*/
+.article__titleLink {
+    text-decoration: none;
 }
 
 
+/*Titre d'article - landing page*/
 .article__title {
-    color: white;
+    color: var(--light);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -147,56 +110,42 @@ line-height: 160%;
 
 }
 
+/*Block bleu d'article - landing page*/
 .article__block {
-    background: #587DCA;
-    
+    background: var(--dream);
     border-radius: 25px;
     justify-content: center;
     align-items: center;
-
     flex-direction: column;
     padding: 20px;
     padding-bottom: 24px;
-    
-    
 }
 
+/*Description d'article - landing page*/
 .article__presentation {
-    background: #EFF1ED;
-    color: #31437F;
-
+    background: var(--moon);
+    color: var(--starry);
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-
-   
-
-/* Body 2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-
-
-
-
-   
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
 
 }
 
+/*Bouton lire - landing page*/
 .article__link {
-    background : #31437F;
-    color: white;
+    background : var(--starry);
+    color: var(--light);
     align-items: center;
     text-align: center;
     display: inline-block;
     text-decoration: none;
-
     height: 42px;
     border-radius: 16px;
     vertical-align: middle;
@@ -207,39 +156,29 @@ line-height: 160%;
     margin-left: 100px;
     margin-right: 100px;
     text-transform: uppercase;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    }
 
    
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-
-    }
-
-    .article__titleLink {
-        text-decoration: none;
-    }
-
-
+/*Titre du microtrotoir*/
 .microtrottoir__titre {
-    
     margin-bottom: 10px;
-    /* Heading 3 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 100%;
-color: #31437F;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 100%;
+    color: var(--starry);
 }
 
+/*Block entourant le microtrottoir*/
 .microtrottoir {
     margin-top: 56px;
-    background: #EFF1ED;
+    background: var(--moon);
     padding-left: 16px;
     padding-right: 16px;
     padding-top: 4px;
@@ -248,25 +187,23 @@ color: #31437F;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
-
 }
 
+/*Vidéo du microtrottoir*/
 .video {
-    
     width: 100%;
     height: auto;
     border-radius: 10px;
 }
 
+/*Introduction au microtrottoir*/
 .microtrottoir__description {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 110%;
-color: #31437F;
-
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 110%;
+    color: var(--starry)
 }
 
 

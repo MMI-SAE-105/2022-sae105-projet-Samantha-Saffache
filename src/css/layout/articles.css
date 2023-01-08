@@ -1,75 +1,146 @@
+/*POUR TOUS LES ARTICLES*/
+
+/*Titre de l'article*/
+.pageArticle__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
+    color: var(--infinity);
+}
+
+/*Sous-titre d'article*/
+.pageArticle__sousTitre {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    color: var(--infinity);
+}
+
+/*Texte d'article*/
+.pageArticle__text {
+    align-items: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+/*Lien externe à la fin de l'article*/
+.pageArticle__link {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    text-decoration-line: underline;
+    color: var(--dream);
+}
+
+
+/*Marges pour espacer chaque paragraphe de texte*/
 .pageArticle__paragraphe {
     margin-bottom: 45px;
     
 }
 
+/*Lien interne vers le glossaire*/
 .internLink {
-    color: #587DCA;
-
-font-family: Inter;
-font-size: 15px;
-font-weight: 700;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: left;
-
-
+    color: var(--dream);
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
+/*Facteur Cheval, partie texte et image transparente*/
 .group {
     display: flex;
-
 }
 
+/*Chapo d'article*/
 .pageArticle__chapo {
-color: white;
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding-right: 17px;
-padding-left: 17px;
-
-
-height: auto;
-left: 31px;
-top: 472px;
-
-background: #587DCA;
-border-radius: 25px;
-margin-bottom: 29px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 17px;
+    padding-left: 17px;
+    height: auto;
+    left: 31px;
+    top: 472px;
+    background: var(--dream);
+    border-radius: 25px;
+    margin-bottom: 29px;
 
 }
 
+/*Texte à l'intérieur du chapo*/
 .pageArticle__chapoText {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 150%;
-   
-    color: #FFFFFF;
-    
-
-
-
+    color: var(--light);
 }
 
 
 
+/*Image principale de l'article*/
 .pageArticle__mainImage {
-max-width: 100%;
-left: 0px;
-top: 0px;
-border-radius: 20px;
-
-
+    max-width: 100%;
+    left: 0px;
+    top: 0px;
+    border-radius: 20px;
 }
 
+/*Image de l'article sans réglage spécifique*/
 .pageArticle__image {
     max-width: 100%;
     border-radius: 20px;
 }
 
+
+
+/*IMAGES ET GROUPES D'IMAGES - Article : A LA DECOUVERTE D'OEUVRES DE SCENOGRAPHES*/
+
+/*Groupe titre spécial et mini image*/
+.pageArticle__titleGroup {
+    display: flex;
+    margin-bottom: 12px;
+    margin-top: 14px;
+}
+
+/*Titre spécial aligné à une mini image*/
+.pageArticle__titleSpecial {
+    margin-right: 14px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
+    color: var(--infinity);
+ }
+
+ /*Image à coté du titre spécial*/
+.pageArticle__imageSpecial { 
+    max-width: 100%;
+    height: 96px;
+    border-radius: 20px;
+}
+
+/*Groupe d'images dans la partie Festival Malmo*/
 .pageArticle__malmoGroup {
     display: flex;
     flex-direction: row;
@@ -77,30 +148,36 @@ border-radius: 20px;
     gap: 14px;
 }
 
+/*Première image - Malmo Festival*/
+.pageArticle__malmoFestivalLongImage {
+    width: 148px;
+    border-radius: 20px;
+ }
+
+/*Groupe de deux images alignées à droite d'une image plus longue - Malmo Festival*/
 .pageArticle__malmoFestivalImagesGroup {
     display: flex;
     flex-direction: column;
     gap: 12px;
-
 }
 
-
-.pageArticle__malmoFestivalLongImage {
-   width: 148px;
-   border-radius: 20px;
-}
-
+/*Images à l'intérieur de ce groupe*/
 .pageArticle__malmoFestivalImages {
-   width: 154px;
-   border-radius: 20px;
-}
+    width: 154px;
+    border-radius: 20px;
+ }
 
+
+
+
+/*Espacement des deux images */
 .pageArticle__realLifeAtWorkGroup {
     display: flex;
     flex-direction: column;
     gap: 13px;
 }
 
+/*Groupe de 4 images carrées de scénographies*/
 .pageArticle__4ScenographGroup {
     display: flex;
     flex-direction: row;
@@ -108,127 +185,53 @@ border-radius: 20px;
     padding-bottom: 20px;
 }
 
+/*Div pour aligner en colonnes de 2 images*/
 .pageArticle__2ScenographGroup {
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
 }
 
+/*Image carrée*/
 .pageArticle__squareImage {
     border-radius: 25px;
     max-width: 100%;
 }
 
 
-.pageArticle__imageGroup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 7px;
-    
-}
-
-.pageArticle__imageSpecial { 
-    max-width: 100%;
-    height: 96px;
-    border-radius: 20px;
-}
 
 
 
+
+
+
+/*ETRE (VRAIMENT) LIBRE DE SON DESTIN*/
+
+/*Citation*/
 .pageArticle__quote {
-background: #31437F;
-padding-top: 11px;
-padding-bottom: 11px;
-padding-left: 15px;
-padding-right: 15px;
-margin: 0px;
-
-font-family: 'Inter';
-font-style: italic;
-font-weight: 400;
-font-size: 13px;
-line-height: 110%;
-
-border-radius: 20.5px;
-
-
-color: white;
+    background: var(--starry);
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0px;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    border-radius: 20.5px;
+    color: var(--light);
 
 }
 
-.pageArticle__title {
-    /* Heading 2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 110%;
-/* or 28px */
 
 
-/* Infinity */
-
-color: #000000;
-    
-}
-
-.pageArticle__titleGroup {
-    display: flex;
-    margin-bottom: 12px;
-    margin-top: 14px;
-}
-
-.pageArticle__titleSpecial {
-   margin-right: 14px;
-       /* Heading 2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 110%;
-/* or 28px */
 
 
-/* Infinity */
+/*LET GO DE SAM RIVERA, LE PASSE SOMBRE D'UNE VIE*/
 
-color: #000000;
-}
-
-.pageArticle__sousTitre {
-   /* Heading 3 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 100%;
-/* identical to box height, or 20px */
-
-
-color: #000000;
-
-}
-
-.pageArticle__text {
-align-items: center;
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 15px;
-line-height: 160%;
-/* or 21px */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
+/*Groupe avec icone de musique et citations de paroles*/
 .pageArticle__music {
     display: flex;
     flex-direction: row;
@@ -241,19 +244,20 @@ flex-grow: 0;
     
 }
 
+/*Icone de musique*/
 .pageArticle__musicIcon {
-    background-color: #EFF1ED;
+    background-color: var(--moon);
     padding-top: 6px;
     padding-bottom: 6px;
     padding-left: 6px;
     padding-right: 6px;
     border-radius: 16px;
-    
 }
 
+/*Citation de paroles*/
 .pageArticle__musicQuote {
-    background-color: #EFF1ED;
-    color: #31437F;
+    background-color: var(--moon);
+    color: var(--starry);
     border-radius: 25px;
     padding-left: 19px;
     padding-right: 19px;
@@ -261,70 +265,35 @@ flex-grow: 0;
     padding-bottom: 9px;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
-    
-
-/* Small Text */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-
-/* Starry */
-color: #31437F;
-
-}
-
-.pageArticle__link {
     font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-/* identical to box height, or 21px */
-
-text-decoration-line: underline;
-
-/* Dream */
-
-color: #587DCA;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
+    color: var(--starry);
 }
 
+
+/*Images larges de l'article*/
 .pageArticle__largeImage {
     max-width: 100%;
     border-radius: 20px;
-
 }
 
+/*Image plus grande de l'article*/
 .pageArticle__grandeImage {
     max-width: 100%;
     border-radius: 20px;
-
-}
-
-.pageArticle__voleuseDesToitsImage {
-    width: 173px;
-    height: 163px;
-    border-radius: 25px;
-}
-
-.image__block {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
-}
-
-.pageArticle__voleuseDesToitsLongImage {
-    max-width: 100%;
-    width: 130px;
-    border-radius: 16px;
- 
 }
 
 
+
+
+
+/*PHENOMENE DE L'ARCHITECTURE NAIVE : LE PALAIS IDEAL DU FACTEUR CHEVAL*/
+
+
+/*Groupe de texte et d'image PNG*/
 .pageArticle__palaisIdealGroup {
     display: flex;
     justify-content: center;
@@ -332,32 +301,33 @@ color: #587DCA;
     flex-direction: column;
 }
 
+/*Image PNG Transparente*/
 .pageArticle__imageFacteurCheval {
     max-width: 100%;
     height: 167px;
 }
 
+/*Texte à coté de l'image*/
 .pageArticle__textFacteurCheval {
-
-
     align-items: center;
-font-size: 13;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-/* or 21px */
-
-
-order: 0;
-flex-grow: 0;
-
+    font-size: 13;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    order: 0;
+    flex-grow: 0;
 }
 
+
+
+
+/*FRISE DE LIEUX SIMILAIRES*/
+
+/*Frise*/
 .frise {
-    background: #EFF1ED;
+    background: var(--moon);
     border-radius: 25px;
     padding-top: 26px;
     padding-bottom: 26px;
@@ -365,8 +335,9 @@ flex-grow: 0;
 
 }
 
+/*Block d'un item de la frise*/
 .pageArticle_friseItem {
-    background: white;
+    background: var(--light);
     border-radius: 25px;
     margin-left: 14px;
     margin-right: 14px;
@@ -379,70 +350,51 @@ flex-grow: 0;
     align-items: center;
     gap: 20px;
     padding-right: 30px;
-    
 }
 
-
+/*Image item*/
 .pageArticle__friseImage {
     display: flex;
     justify-content: flex-start;
     border-radius: 25px;
     position: relative;
     height: 130px;
-
-
 }
 
+/*Nom item*/
 .pageArticle__friseNom {
-    /* BUTTON */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-/* or 16px */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
+/*Lieu item*/
 .pageArticle__friseLieu {
-    /* Small Text */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-
-
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
 }
 
+/*Date item*/
 .pageArticle__friseDate {
-    /* Small Text */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-margin-block-start: -7px;
-
-
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
+    margin-block-start: -7px;
 }
 
+/*Ligne d'arrière plan*/
 .line {
-    border-left: 9px solid #31437F;
- 
-  height: 767px;
-   
+    border-left: 9px solid var(--starry);
+    height: 767px;
     margin-left: 73px;
     position: absolute;
     z-index: 0;
@@ -451,8 +403,12 @@ margin-block-start: -7px;
 
 
 
+/*FILMOGRAPHIE*/
+
+
+/*Filmographie*/
 .pageArticle__filmographie {
-    background: #EFF1ED;
+    background: var(--moon);
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -461,101 +417,109 @@ margin-block-start: -7px;
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 20px;
-    padding-bottom: 20px;
-
-    
-}
-
-.pageArticle__filmographieSection {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    padding-bottom: 20px; 
 }
 
 
+/*Item filmographie*/
 .pageArticle__filmographieItem {
-    background-color: white;
+    background-color: var(--light);
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-
     align-items: center;
-   
-    
-    
-
-height: 192px;
-width: 110px;
-left: 13px;
-top: 20px;
-margin-bottom: 19px;
-
-
+    height: 192px;
+    width: 110px;
+    left: 13px;
+    top: 20px;
+    margin-bottom: 19px;
 }
   
-    
 
-
-
+/*Image film*/
 .pageArticle__filmographieImage {
     max-width: 100%;
     border-radius: 12px;
     width: 97px;
 }
 
+/*Groupe de texte NOM et DATE du film*/
 .pageArticle__filmographieText {
     padding-left: 6px;
     padding-right: 8px;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
-
 }
 
+/*Nom du film*/
 .pageArticle__filmographieNom {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 11px;
     line-height: 100%;
-    /* or 11px */
-    
-
 }
 
+/*Date du film*/
 .pageArticle__filmographieDate {
-    /* Small Text */
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-color: #000000;
-/* Inside auto layout */
-flex: none;
-order: 1;
-flex-grow: 0;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
+    color: var(--infinity);
 }
 
-.extrait {
-    background: #31437F;
-    position: fixed;
-   
-    place-content: left;
 
+/*LA VOLEUSE DES TOITS, LE ROMAN AUTO EDITE DE LAURE DARGELOS*/
+
+
+/*Groupe de 3 images alignées*/
+.image__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
 }
 
+/*Groupe de 2 images alignées verticalement à l'intérieur de ce groupe*/
+.pageArticle__imageGroup {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 7px;
+    
+}
+
+/*2 images carrées à l'intérieur de ce groupe*/
+.pageArticle__voleuseDesToitsImage {
+    width: 173px;
+    height: 163px;
+    border-radius: 25px;
+}
+
+
+
+/*Image longue du marque page Plume de la Voleuse Des Toits*/
+.pageArticle__voleuseDesToitsLongImage {
+    max-width: 100%;
+    width: 130px;
+    border-radius: 16px;
+}
+
+
+/*Page extrait*/
+
+
+/*Bouton pour ouvrir la page extrait*/
 .extraitBtn {
-    background : #31437F;
-    color: white;
+    background : var(--starry);
+    color: var(--light);
     align-items: center;
     text-align: center;
     display: inline-block;
     text-decoration: none;
-
     height: 42px;
     border-radius: 16px;
     vertical-align: middle;
@@ -566,18 +530,22 @@ flex-grow: 0;
     margin-left: 100px;
     margin-right: 100px;
     text-transform: uppercase;
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
 }
 
-.extrait__text {
-    background: #587DCA;
-    border-radius: 25px;
+/*Page de l'extrait*/
+.extrait {
+    background: var(--starry);
+    position: fixed;
+    place-content: left;
+}
 
+/*Texte de l'extrait*/
+.extrait__text {
+    background: var(--dream);
+    border-radius: 25px;
 }

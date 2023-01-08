@@ -11,30 +11,30 @@
     
 }
 
-
-
 /*No scroll*/
 .noscroll,
 .noscroll body {
-overflow: hidden;
+    overflow: hidden;
 }
 
+/*Tous les élements du menu*/
+.menu__list {
+  padding-left: 0px;
+  z-index: 2;
+}
 
 /*Liens du menu vers les articles*/
 .menu__link {
-text-decoration: none;
-color: white;
-
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 14px;
-line-height: 100%;
-
-
+  text-decoration: none;
+  color: var(--light);
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
 }
 
+/*Element du menu*/
 .menu__item {
   list-style-type: none;
   margin-bottom: 20px;
@@ -43,97 +43,72 @@ line-height: 100%;
   
 }
 
+/*Partie Articles du menu*/
 .articles__section {
   margin-top: 47px;
   margin-bottom: 31px;
   margin-right: 38px;
   z-index: 2;
   padding-inline-start: 0px;
-
 }
 
+/*Autres pages du menu*/
 .other__section {
   z-index: 1;
-
 }
 
+/*Boutons des autres pages du menu*/
 .menu__buttons {
   background : var(--light);
-  color: #31437F;
+  color: var(--starry);
   align-items: center;
   text-align: center;
   display: inline-block;
   text-decoration: none;
-
   border-radius: 9px;
   vertical-align: middle;
-
   justify-content: center;
   display: flex;
-
   margin-left: 39px;
   margin-right: 208px;
+  margin-bottom: 15px;
   padding-top: 7px;
-    padding-bottom: 7px;
- 
-  /* BUTTON */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-/* or 16px */
-
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-/* Starry */
-
-color: #31437F;
+  padding-bottom: 7px;
   
-z-index: 2;
-
-margin-bottom: 15px;
-
-}
-
-.menu__list {
-  padding-left: 0px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 160%;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
   z-index: 2;
 }
 
-.menu__buttonsText {
-  text-decoration: none;
-  color: #31437F;
-  font-style: var(--b-u-t-t-o-n) ;
-  
-}
 
+
+
+/*Bouton fermer menu*/
 .menu__closeBtn {
   position: absolute;
- 
   right: 0;
   display: flex;
   justify-content: end;
   z-index: 3;
-
   background: none;
   border: none;
 
   margin-right: 14px;
   margin-top: 14px;
-  
-
 }
 
 .menu__close {
  
 
-
 }
 
+/*Illustrations en fond du menu*/ 
 .menu__illustrations {
   position: absolute;
   right: 0;
