@@ -228,13 +228,17 @@ flex-grow: 0;
     justify-content: center;
     align-items: center;
     padding-left: 16px;
+    gap: 16px;
     
 }
 
 .pageArticle__musicIcon {
     background-color: #EFF1ED;
-    border-radius: 100%;
-   
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 6px;
+    padding-right: 6px;
+    border-radius: 16px;
     
 }
 
@@ -246,6 +250,9 @@ flex-grow: 0;
     padding-right: 19px;
     padding-top: 9px;
     padding-bottom: 9px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    
 
 /* Small Text */
 
@@ -525,6 +532,14 @@ flex-grow: 0;
 }
 
 .extrait {
+    background: #31437F;
+    position: fixed;
+   
+    place-content: left;
+
+}
+
+.extraitBtn {
     background : #31437F;
     color: white;
     align-items: center;
