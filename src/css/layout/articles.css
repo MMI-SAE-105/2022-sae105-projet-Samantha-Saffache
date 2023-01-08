@@ -60,10 +60,45 @@ border-radius: 20px;
     max-width: 100%;
 }
 
+.pageArticle__malmoGroup {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+}
+
+.pageArticle__malmoFestivalImagesGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+}
+
+
+.pageArticle__malmoFestivalLongImage {
+   width: 148px;
+}
+
+.pageArticle__malmoFestivalImages {
+   width: 154px;
+}
+
+.pageArticle__4ScenographGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.pageArticle__2ScenographGroup {
+    gap: 15px;
+}
+
+
 .pageArticle__imageGroup {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 7px;
+    
 }
 
 .pageArticle__imageSpecial { 
@@ -71,9 +106,7 @@ border-radius: 20px;
     height: 96px;
 }
 
-.image__block {
-    display: flex;
-}
+
 
 .pageArticle__quote {
 background: #31437F;
@@ -234,11 +267,23 @@ color: #587DCA;
 
 }
 
-.pageArticle__LongImage {
+.pageArticle__voleuseDesToitsImage {
+    width: 173px;
+    height: 163px;
+}
+
+.image__block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.pageArticle__voleuseDesToitsLongImage {
     max-width: 100%;
     width: 130px;
     border-radius: 16px;
-    height: 181px;
+ 
 }
 
 .pageArticle__imageFacteurCheval {
