@@ -411,12 +411,13 @@
     border-radius: 25px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-content: space-between;
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 20px;
     padding-bottom: 20px; 
+    gap: 9px;
+    max-width: 348px;
 }
 
 .filmographie__align {
@@ -430,12 +431,11 @@
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    
     height: 192px;
     width: 110px;
     left: 13px;
     top: 20px;
-    margin-bottom: 19px;
+    margin-bottom: 5px;
 }
   
 
