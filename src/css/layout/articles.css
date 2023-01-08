@@ -555,13 +555,20 @@
 
 /*Page de l'extrait*/
 .extrait {
-    background: var(--starry);
-    position: fixed;
-    place-content: left;
+   
+   
 }
+
+/*Mise en page*/
+.extrait {
+    background: var(--starry);
+   
+}
+
 
 /*Texte de l'extrait*/
 .extrait__text {
     background: var(--dream);
     border-radius: 25px;
+    color: var(--light);
 }
