@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<html lang="en" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ne m'oublie pas</title>
+    <title>Forget Me Not</title>
     <link rel="stylesheet" href="../src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -81,30 +81,31 @@
 
     
     <main class="main">
-        <h2 class="pageTitle__h2">Glossaire</h2>
+        <h2 class="pageTitle__h2">Glossary</h2>
         <dl class="glossaire__item">
-<dt class="glossaire__mot">conformisme</dt>
-    <dd class="glossaire__definition">Tendance à se conformer aux usages, à accepter les manières de penser ou d'agir du plus grand nombre, les normes sociales.</dd>
+<dt class="glossaire__mot">conformism</dt>
+    <dd class="glossaire__definition">Tendency to conform to customs, to accept the ways of thinking or acting of the majority, the social norms.</dd>
 </dl>
     <dl class="glossaire__item">
-   <dt class="glossaire__mot">scénographie</dt>
+   <dt class="glossaire__mot">set design</dt>
         <dd class="glossaire__definition">
-            Art de représenter en perspective.
-            Art de concevoir les décors scéniques ; ces décors mêmes.
-            Ensemble des éléments picturaux, plastiques et techniques qui permettent l'élaboration d'une mise en scène, notamment théâtrale, ou d'un spectacle quelconque.
-            Aménagement expressif d'un espace architectural complexe.
+            Art of representing in perspective.
+            Art of designing stage sets; these sets themselves.
+            All the pictorial, plastic and technical elements that allow the elaboration of a staging, notably theatrical, or of any show. 
+            Expressive arrangement of a complex architectural space.
+            
         </dd>
     </dl>
 
     <dl class="glossaire__item">
-    <dt class="glossaire__mot">architecture naïve</dt>
-    <dd class="glossaire__definition">L’architecture naïve ou environnements visionnaires désigne des constructions édifiées par des personnes autodidactes sans formation artistique.</dd>
+    <dt class="glossaire__mot">naive architecture</dt>
+    <dd class="glossaire__definition">Naive architecture or visionary environments refer to constructions built by self-taught people without artistic training.</dd>
 
     </dl>
     </main>
 
     <footer class="footer" >
-        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Back to top</button>
        
         
     
@@ -112,14 +113,18 @@
             Samantha Saffache MMI 1 C2
         </p>
     
-      
+         
+        
         
         <div class="footer__bottomGroup">
-            <p class="footer__mentions">Projet réalisé dans le<br>
-                cadre d’un exercice<br>
-                pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+            <p class="footer__mentions">Project carried out<br>
+                within the framework<br>
+                of a pedagogical<br>
+                in the <a class="footer__link" href="http://mmimontbeliard.com/">MMI department</a><br>
+                <a class="footer__link" href="http://mmimontbeliard.com/">of Montbéliard.</a></p>
+                
                 <div class="footer__bottom">
-                    <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                    <img class="footer__logo" src="../assets/icones/Logo-white-en.svg" alt="Logo footer">
                 </div>
                     <div class="footer__social">
                         <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
@@ -130,10 +135,10 @@
         </div>
     
         <script>
-         
+          
             let mybutton = document.getElementById("myBtn");
             
-        
+           
             window.onscroll = function() {scrollFunction()};
             
             function scrollFunction() {
@@ -144,7 +149,7 @@
               }
             }
             
-           
+       
             function topFunction() {
               document.body.scrollTop = 0;
               document.documentElement.scrollTop = 0;
@@ -152,6 +157,8 @@
             </script>
         
     </footer>
+    
+
 
 </body>
 </html>
