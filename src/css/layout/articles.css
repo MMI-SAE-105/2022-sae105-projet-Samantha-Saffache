@@ -566,11 +566,13 @@
    
 }
 
+/*Body de la page extrait*/
 .extrait__body {
     margin: 0;
     background: var(--starry)
 }
 
+/*Titre de la page extrait*/
 .extrait__titre {
     font-family: 'Inter';
     font-size: 25px;
@@ -610,6 +612,7 @@
     line-height: 150%;
 }
 
+/*Bouton fermer l'extrait*/
 .extrait__closeBtn {
     position: absolute;
     margin-right: 14px;
@@ -620,6 +623,8 @@
     justify-content: end;
 }
 
+
+/*Image fermer*/
 .extrait__close {
     position: absolute;
     margin-right: 14px;
