@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="{noscroll:menuIsOpen}">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ne m'oublie pas</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   
+</head>
+<body class="body">
+    <header class="header">
+       
+
+        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+
+   
+
+        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
+
+           
+            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+            class="menu__closeBtn">
+            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+            </button>
+
+            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+            <div class="menu__list">
+                
+                
+                    <div class="articles__section">
+                        
+                    
+                        <ul class="menu__ul">
+                            <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
+                            <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
+                            <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
+                            <li class="menu__item"><a class="menu__link" href="le-cercle-des-poetes-disparus.html">Le Cercle des poètes disparus, une oeuvre cinématographique de renom</a></li>
+                            <li class="menu__item"><a class="menu__link" href="le-conformisme-et-la-manipulation.html">Le conformisme et la manipulation</a></li>
+                            <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
+                            <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
+                        </ul>
+                    </div>
+                
+            
+            
+                
+                    <div class="other__section">
+                        <a class="menu__buttons" href="glossaire.html">GLOSSAIRE</a>
+                        <a class="menu__buttons" href="a-propos.html">À PROPOS</a>
+                        <a class="menu__buttons" href="autres-projets.html">AUTRES PROJETS</a>
+                        </div>
+               
+                
+            </div>
+
+            
+        </nav>
+
+        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
+
+        <div class="header__end">
+         
+         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+        class="header__menuBtn">
+            <img src="../assets/icones/menu.svg" alt="menu">
+            <span></span>
+        </button>
+        </div>
+        
+
+       
+     
+    </header>
+
+
+    
+    <main class="main">
+        <h2 class="pageTitle__h2">Glossaire</h2>
+        <dl class="glossaire__item">
+<dt class="glossaire__mot">conformisme</dt>
+    <dd class="glossaire__definition">Tendance à se conformer aux usages, à accepter les manières de penser ou d'agir du plus grand nombre, les normes sociales.</dd>
+</dl>
+    <dl class="glossaire__item">
+   <dt class="glossaire__mot">scénographie</dt>
+        <dd class="glossaire__definition">
+            Art de représenter en perspective.
+            Art de concevoir les décors scéniques ; ces décors mêmes.
+            Ensemble des éléments picturaux, plastiques et techniques qui permettent l'élaboration d'une mise en scène, notamment théâtrale, ou d'un spectacle quelconque.
+            Aménagement expressif d'un espace architectural complexe.
+        </dd>
+    </dl>
+
+    <dl class="glossaire__item">
+    <dt class="glossaire__mot">architecture naïve</dt>
+    <dd class="glossaire__definition">L’architecture naïve ou environnements visionnaires désigne des constructions édifiées par des personnes autodidactes sans formation artistique.</dd>
+
+    </dl>
+    </main>
+
+    <footer class="footer" >
+        <button class="footer__backTop" onclick="topFunction()" id="myBtn" title="Go to top"><img class="footer__backTopImg" src="../assets/icones/arrow-up-1.svg" alt="flèche vers le haut"><br>Retour en haut</button>
+       
+        
+    
+        <p class="footer__name">
+            Samantha Saffache MMI 1 C2
+        </p>
+    
+      
+        
+        <div class="footer__bottomGroup">
+            <p class="footer__mentions">Projet réalisé dans le<br>
+                cadre d’un exercice<br>
+                pédagogique au<br>département <br> <a class="footer__link" href="http://mmimontbeliard.com/">MMI de Montbéliard</a></p>
+                <div class="footer__bottom">
+                    <img class="footer__logo" src="../assets/icones/Logo-white.svg" alt="Logo footer">
+                </div>
+                    <div class="footer__social">
+                        <a class="footer__link" href="http://mmimontbeliard.com/"><img class="footer__icons" src="../assets/icones/MMI-Blanc.svg" alt="site MMI Montbéliard"></a>
+                        <a class="footer__link" href="https://www.facebook.com/mmimontbeliard"><img class="footer__icons" src="../assets/icones/facebook.svg" alt="facebook"></a>
+                        <a class="footer__link" href="https://www.instagram.com/mmi_montbeliard/"><img class="footer__icons" src="../assets/icones/instagram.svg" alt="instagram"></a>
+            
+                </div>
+        </div>
+    
+        <script>
+         
+            let mybutton = document.getElementById("myBtn");
+            
+        
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+           
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+        
+    </footer>
+
+</body>
+</html>
