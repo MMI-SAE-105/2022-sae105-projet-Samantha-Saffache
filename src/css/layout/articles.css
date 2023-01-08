@@ -310,11 +310,10 @@
 /*Texte à coté de l'image*/
 .pageArticle__textFacteurCheval {
     align-items: center;
-    font-size: 13;
+    font-size: 15;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 13px;
     line-height: 160%;
     order: 0;
     flex-grow: 0;
