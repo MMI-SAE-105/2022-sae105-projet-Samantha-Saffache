@@ -135,6 +135,8 @@ line-height: 160%;
     color: #31437F;
     margin-left: 27px;
     margin-right: 27px;
+    margin-top: 37px;
+    margin-bottom: 25px;
 }
 
 .about__quote {
@@ -176,6 +178,7 @@ color: #4094DE;
 flex-direction: row;
 flex-wrap: nowrap;
 align-items: center;
+gap: 25px;
 }
 
 .formulaire__contact {
@@ -186,7 +189,7 @@ align-items: center;
     display: flex;
     
     flex-direction: column;
-    align-items: center;
+    
 }
 
 .formulaire__block {
@@ -202,8 +205,9 @@ color: #B3B3B3;
 
 border-radius: 9px;
 margin-bottom: 21px;
-gap: 20px;
+gap: 8px;
 display: flex;
+flex-direction: column;
 
 }
 
@@ -242,6 +246,17 @@ color: #FFFFFF;
 
 border: 1px solid #B3B3B3;
 border-radius: 9px;
+width: 283px;
+height: 42px;
+
+font-family: Inter;
+font-size: 13px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: left;
+
+
 }
 
 .form__title {
@@ -254,3 +269,10 @@ border-radius: 9px;
             color: #000000;
 }
 
+.contact__form {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}

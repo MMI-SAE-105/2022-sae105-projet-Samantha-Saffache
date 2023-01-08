@@ -58,6 +58,7 @@ border-radius: 20px;
 
 .pageArticle__image {
     max-width: 100%;
+    border-radius: 20px;
 }
 
 .pageArticle__malmoGroup {
@@ -77,19 +78,36 @@ border-radius: 20px;
 
 .pageArticle__malmoFestivalLongImage {
    width: 148px;
+   border-radius: 20px;
 }
 
 .pageArticle__malmoFestivalImages {
    width: 154px;
+   border-radius: 20px;
+}
+
+.pageArticle__realLifeAtWorkGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
 }
 
 .pageArticle__4ScenographGroup {
     display: flex;
     flex-direction: row;
+    gap: 15px;
+    padding-bottom: 20px;
 }
 
 .pageArticle__2ScenographGroup {
+    display: flex;
+    flex-wrap: wrap;
     gap: 15px;
+}
+
+.pageArticle__squareImage {
+    border-radius: 25px;
+    max-width: 100%;
 }
 
 
@@ -104,6 +122,7 @@ border-radius: 20px;
 .pageArticle__imageSpecial { 
     max-width: 100%;
     height: 96px;
+    border-radius: 20px;
 }
 
 
@@ -259,17 +278,20 @@ color: #587DCA;
 
 .pageArticle__largeImage {
     max-width: 100%;
+    border-radius: 20px;
 
 }
 
 .pageArticle__grandeImage {
     max-width: 100%;
+    border-radius: 20px;
 
 }
 
 .pageArticle__voleuseDesToitsImage {
     width: 173px;
     height: 163px;
+    border-radius: 25px;
 }
 
 .image__block {
@@ -284,6 +306,14 @@ color: #587DCA;
     width: 130px;
     border-radius: 16px;
  
+}
+
+
+.pageArticle__palaisIdealGroup {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-direction: column;
 }
 
 .pageArticle__imageFacteurCheval {
