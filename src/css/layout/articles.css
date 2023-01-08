@@ -66,6 +66,10 @@
 /*Facteur Cheval, partie texte et image transparente*/
 .group {
     display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Chapo d'article*/
