@@ -28,22 +28,23 @@ align-items: center;
 .welcome__visual {
    max-width: 100%;
     border-radius: 20px;
-    margin-left: 13px;
-    margin-right: 14px;
-    margin-top: 12px;
+ 
 
 }
 
 .welcome__block {
     display: flex;
     align-content: center;
+    
+
     background: #587DCA;
     border-radius: 20px;
     margin-left: 0px;
     margin-right: 0px;
-   
     padding-bottom: 13px;
-    flex-direction: row;
+    padding-top: 13px;
+   
+    
     align-items: center;
     justify-content: center;
 
