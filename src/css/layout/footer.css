@@ -5,11 +5,74 @@
     color: white;
     display: flex;
     flex-direction: column; 
+}
 
-    
 
-    
 
+/*Prénom, nom et classe*/
+.footer__name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+
+
+/* Bouton Retour en haut */
+.footer__backTop {
+    margin-top: 18px;
+    display: flex;
+    align-content: center;
+    background: none;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+/*Image flèche retour en haut*/
+.footer__backTopImg {
+
+}
+
+/*Texte bouton retour en haut*/
+.footer__backTopText {
+    text-align: center;
+    font-style: var(--s-m-a-l-l--t-e-x-t--u-p-p-e-r-c-a-s-e);
+}
+
+/*Alignement de MENTIONS + LOGO + RESEAUX SOCIAUX*/
+.footer__bottomGroup {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+
+/*Mentions*/
+.footer__mentions {
+    text-align: left;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 110%;
+    color: #FFFFFF;
+} 
+
+/* Lien MMI du footer */
+.footer__link {
+   color: white;
 }
 
 /* Logo du footer */
@@ -17,97 +80,7 @@
     align-content: center;
     left: auto;
     right: auto;
-    
-    
-
 }
-
-.footer__name {
-    /* Small Text */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-
-text-align: center;
-
-color: #FFFFFF;
-
-}
-
-/* Texte du footer */
-.footer__text {
-    text-align: left;
-    padding-right: 242px;
-    padding-left: 23px;
-
-}
-
-.footer__mentions {
-    text-align: left;
-    
-
-    /* Small Text */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 300;
-font-size: 11px;
-line-height: 110%;
-/* or 12px */
-
-
-color: #FFFFFF;
-
-
-}
-
-/* Retour en haut */
-.footer__backTop {
-    margin-top: 18px;
-    display: flex;
-    align-content: center;
-    background: none;
-    border: none;
- 
-    /* BUTTON */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-/* or 16px */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-    
-
-}
-
-.footer__backTopImg {
-
-}
-
-.footer__backTopText {
-    text-align: center;
-    font-style: var(--s-m-a-l-l--t-e-x-t--u-p-p-e-r-c-a-s-e);
-    
-
-}
-
-/* Liens du footer */
-.footer__link {
-   color: white;
- 
-}
-
 
 
 /* Réseaux sociaux du footer */
@@ -116,38 +89,17 @@ color: #FFFFFF;
     display: flex;
     justify-content: center;
     align-content: center;
-    
     gap: 6px;
     align-items: center;
     flex-direction: row;
 }
     
 
-
-
-
+/*Icone réseaux sociaux*/
 .footer__icons {
    fill: white;
-   
-   
 }
 
-.footer__bottom {
-   
-   
-    margin-bottom: -31px;
-    height: 95px;
-width: 95px;
 
 
 
-}
-
-.footer__bottomGroup {
-    display: flex;
-    
-    gap: 24px;
-    flex-direction: row;
-    padding-bottom: 10px;
-
-}

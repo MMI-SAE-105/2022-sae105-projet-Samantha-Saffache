@@ -1,14 +1,17 @@
+
+
+/*AUTRES PROJETS*/
+
+/*Fond spécial*/
 .background {
     background-color: #587DCA;
 }
 
+/*Main spécifique à cette page pour enlever les marges*/
 .otherprojects__main {
-    
     background-color: #587DCA;
     margin-top: 0px;
     margin-bottom: 0px;
-    
-    
     padding: 0;
     padding-bottom: 30px;
 }
@@ -17,55 +20,69 @@
     
 }
 
+/*Titre de la page*/
 .otherProjects__title {
     color: white;
     text-align: center;
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 100%;
-margin-top: 0px;
-padding-top: 30px;
-
-
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+    margin-top: 0px;
+    padding-top: 30px;
 }
 
+/*Item element*/
 .otherProjects__item {
     background-color: #EFF1ED;
-    
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 23px;
     padding-right: 23px;
     border-radius: 10px;
-    
     text-align: center;
     margin-bottom: 16px;
-
     margin-left: 38px;
     margin-right: 38px;
-    
 }
 
 
-
+/*Item nom de site*/
 .project__name {
     color: #31437F;
     margin: 0;
 }
 
+/*Item nom d'auteur*/
 .project__author {
     color: #587DCA;
     margin: 0;
 }
 
+/*Item lien site*/
 .otherprojects__links {
     text-decoration: none;
 }
 
 
+
+
+
+
+
+/*Tire page A PROPOS + GLOSSAIRE*/
+.pageTitle__h2 {
+    text-align: center;
+}
+
+
+/*___________________________________________________________________________________________________________________________________________*/
+
+
+/*GLOSSAIRE*/
+
+/*Item glossaire*/
 .glossaire__item {
     background: #587DCA;
     border-radius: 20px;
@@ -74,57 +91,62 @@ padding-top: 30px;
     padding-right: 21px;
     padding-top: 13px;
     padding-bottom: 16px;
-
-
 }
 
+/*Mot à définir*/
 .glossaire__mot {
     background: #EFF1ED;
     color: #31437F;
     border-radius: 12px;
-    
     padding-top: 11px;
     padding-bottom: 11px;
     text-align: center;
-
-    /* Heading 3 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 100%;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
 }
 
+/*Définition du mot*/
 .glossaire__definition {
     padding-top: 13px;
     text-align: left;
     margin: 0px;
-    /* Body 2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-/* or 21px */
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
 }
 
-.pageTitle__h2 {
-    text-align: center;
-}
+
+/*___________________________________________________________________________________________________________________________________________*/
+
+
+/*A PROPOS*/
 
 .about__logo {
     
-
 }
 
 .about__name {
 
 }
 
+/*Introduction*/
+.about__blockIntro {
+    background-color: #31437F;
+    border-radius: 25px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+/*Bloc itation de fin*/
 .about__quoteBlock {
     background: #EFF1ED;
     border-radius: 25px;
@@ -139,82 +161,92 @@ line-height: 160%;
     margin-bottom: 25px;
 }
 
+/*Texte citation de fin*/
 .about__quote {
-font-family: 'Inter';
-font-style: italic;
-font-weight: 400;
-font-size: 13px;
-line-height: 110%;
-color: #31437F;
+    font-family: 'Inter';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 110%;
+    color: #31437F;
 }
 
-.about__blockIntro {
-    background-color: #31437F;
-    border-radius: 25px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
 
-}
-
+/*Logo et nom prénom*/
 .about__informations {
     display: flex;
-    /* BUTTON */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-/* or 16px */
-
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-color: #4094DE;
-
-flex-direction: row;
-flex-wrap: nowrap;
-align-items: center;
-gap: 25px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #4094DE;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 25px;
 }
 
+
+
+/*Bloc titre 'contactez nous' + formulaire de contact*/
+.formulaire {
+    display: flex;
+    flex-direction: column;
+}
+
+/*Titre 'contactez nous'*/
+.form__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 110%;
+    color: #000000;
+}
+
+/*Formulaire de contact*/
 .formulaire__contact {
     color: #B3B3B3;
 }
 
-.formulaire {
-    display: flex;
-    
-    flex-direction: column;
-    
-}
-
+/*Catégories*/
 .formulaire__block {
-   /* Body 2 */
-
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 13px;
-line-height: 160%;
-
-color: #B3B3B3;
-
-border-radius: 9px;
-margin-bottom: 21px;
-gap: 8px;
-display: flex;
-flex-direction: column;
-
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 160%;
+    color: #B3B3B3;
+    border-radius: 9px;
+    margin-bottom: 21px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
 }
 
+/*Indication pour remplir*/
 .label {
     color: #B3B3B3;
 }
 
+/*Case pour écrire*/
+.input__case {
+    border: 1px solid #B3B3B3;
+    border-radius: 9px;
+    width: 283px;
+    height: 42px;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+/*Bouton envoyer*/
 .formulaire__contactSendButton {
     background-color: #587DCA;
     border-radius: 16px;
@@ -224,51 +256,20 @@ flex-direction: column;
     padding-left: 30px;
     padding-right: 30px;
     color: white;
-
     font-family: 'Inter';
-font-style: normal;
-font-weight: 700;
-font-size: 10px;
-line-height: 160%;
-/* identical to box height, or 16px */
-
-text-align: center;
-letter-spacing: 0.1em;
-text-transform: uppercase;
-
-/* Light */
-
-color: #FFFFFF;
-
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 160%;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
-.input__case {
-
-border: 1px solid #B3B3B3;
-border-radius: 9px;
-width: 283px;
-height: 42px;
-
-font-family: Inter;
-font-size: 13px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0em;
-text-align: left;
 
 
-}
-
-.form__title {
-    
-    font-family: 'Inter';
-            font-style: normal;
-            font-weight: 700;
-            font-size: 25px;
-            line-height: 110%;
-            color: #000000;
-}
-
+/*Alignement ormulaire de contact*/
 .contact__form {
     display: flex;
     flex-direction: row;
