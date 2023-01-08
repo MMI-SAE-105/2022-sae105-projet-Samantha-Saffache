@@ -554,21 +554,75 @@
 }
 
 /*Page de l'extrait*/
-.extrait {
-   
-   
-}
+
 
 /*Mise en page*/
 .extrait {
-    background: var(--starry);
+    
    
 }
 
+.extrait__body {
+    margin: 0;
+    background: var(--starry)
+}
+
+.extrait__titre {
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: var(--light);
+    margin-top: 119px;
+
+}
+
+
+/*Bloc de fond de texte*/
+.extrait__textBlock {
+    background: var(--dream);
+    border-radius: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 10px;
+    padding-bottom: 14px;
+}
 
 /*Texte de l'extrait*/
 .extrait__text {
     background: var(--dream);
     border-radius: 25px;
     color: var(--light);
+    margin-bottom: 13px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+}
+
+.extrait__closeBtn {
+    position: absolute;
+    margin-right: 14px;
+    margin-top: 14px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.extrait__close {
+    position: absolute;
+    margin-right: 14px;
+    margin-top: 14px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    
 }
