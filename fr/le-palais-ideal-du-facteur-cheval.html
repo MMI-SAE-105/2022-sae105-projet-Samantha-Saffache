@@ -13,28 +13,30 @@
    
 </head>
 <body class="body">
-    <header class="header">
+  <header class="header">
        
 
-        <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
+    <a class="english_link" href="en/index.html"><img src="../assets/icones/globe-1.svg" alt="langue"></a>
 
-   
 
-        <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-           
-            <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
-            class="menu__closeBtn">
-            <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
-            </button>
+    <nav id="mainNav" class="menu" x-show="menuIsOpen" x-transition.duration.500ms >
 
-            <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+       
+        <button aria-controls="mainNav" id="close-btn" @click="menuIsOpen = ! menuIsOpen" 
+        class="menu__closeBtn">
+        <img class="menu__close" src="../assets/icones/cross.svg" alt="fermer">
+        </button>
 
-            <div class="menu__list">
-                
-                
-                    <ul class="articles__section">
+        <img class="menu__illustrations" src="../assets/images/menu/illustrations.png" alt="illustrations">
+
+        <div class="menu__list">
+            
+            
+                <div class="articles__section">
                     
+                
+                  <ul class="menu__ul">
                         <li class="menu__item"><a class="menu__link" href="le-palais-ideal-du-facteur-cheval.html">Phénomène de l’architecture naïve : Le Palais Idéal du Facteur Cheval</a></li>
                         <li class="menu__item"><a class="menu__link" href="la-voleuse-des-toits.html">La Voleuse des Toits, le roman auto-édité  de Laure Dargelos</a></li>
                         <li class="menu__item"><a class="menu__link" href="let-go-sam-rivera.html">Let Go de Sam Rivera, le passé sombre d’une vie</a></li>
@@ -43,37 +45,39 @@
                         <li class="menu__item"><a class="menu__link" href="etre-vraiment-libre-de-son-destin.html">Être (vraiment) libre de son destin</a></li>
                         <li class="menu__item"><a class="menu__link" href="a-la-decouverte-d-oeuvres-de-scenographes.html">À la découverte d’oeuvres de scénographes</a></li>
                     </ul>
-                
+                </div>
             
-            
-                
-                    <div class="other__section">
-                        <a class="menu__buttonsText" href="glossaire.html"><div class="menu__buttons">GLOSSAIRE</div></a>
-                        <a class="menu__buttonsText" href="a-propos.html"><div class="menu__buttons">À PROPOS</div></a>
-                        <a class="menu__buttonsText" href="autres-projets.html"><div class="menu__buttons">AUTRES PROJETS</div></a>
-                        </div>
-               
-                
-            </div>
-
-            
-        </nav>
-
-        <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
-
-        <div class="header__end">
-         
-         <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
-        class="header__menuBtn">
-            <img src="../assets/icones/menu.svg" alt="menu">
-            <span></span>
-        </button>
-        </div>
         
+        
+            
+                <div class="other__section">
+                    <a class="menu__buttons" href="glossaire.html">GLOSSAIRE</a>
+                    <a class="menu__buttons" href="a-propos.html">À PROPOS</a>
+                    <a class="menu__buttons" href="autres-projets.html">AUTRES PROJETS</a>
+                    </div>
+           
+            
+        </div>
 
-       
+        
+    </nav>
+
+    <a class="header__link" href="index.html"><img class="header__logo" src="../assets/icones/Logo-header.svg" alt="logo"></a>
+
+    <div class="header__end">
      
-    </header>
+     <button aria-controls="mainNav" @click="menuIsOpen = ! menuIsOpen" 
+    class="header__menuBtn">
+        <img src="../assets/icones/menu.svg" alt="menu">
+        <span></span>
+    </button>
+    </div>
+    
+
+   
+ 
+</header>
+
 
     <main class="main">
         <img class="pageArticle__mainImage" src="../assets/images/Article-1/image-1.webp" alt="le palais idéal du facteur cheval">

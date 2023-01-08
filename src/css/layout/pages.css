@@ -4,12 +4,12 @@
 
 /*Fond spécial*/
 .background {
-    background-color: #587DCA;
+    background-color: var(--dream);
 }
 
 /*Main spécifique à cette page pour enlever les marges*/
 .otherprojects__main {
-    background-color: #587DCA;
+    background-color: var(--dream);
     margin-top: 0px;
     margin-bottom: 0px;
     padding: 0;
@@ -22,7 +22,7 @@
 
 /*Titre de la page*/
 .otherProjects__title {
-    color: white;
+    color: var(--light);
     text-align: center;
     font-family: 'Inter';
     font-style: normal;
@@ -35,7 +35,7 @@
 
 /*Item element*/
 .otherProjects__item {
-    background-color: #EFF1ED;
+    background-color: var(--moon);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 23px;
@@ -50,13 +50,13 @@
 
 /*Item nom de site*/
 .project__name {
-    color: #31437F;
+    color: var(--starry);
     margin: 0;
 }
 
 /*Item nom d'auteur*/
 .project__author {
-    color: #587DCA;
+    color: var(--dream);
     margin: 0;
 }
 
@@ -69,7 +69,7 @@
 
 
 
-
+/*___________________________________________________________________________________________________________________________________________*/
 
 /*Tire page A PROPOS + GLOSSAIRE*/
 .pageTitle__h2 {
@@ -84,9 +84,9 @@
 
 /*Item glossaire*/
 .glossaire__item {
-    background: #587DCA;
+    background: var(--dream);
     border-radius: 20px;
-    color: white;
+    color: var(--light);
     padding-left: 21px;
     padding-right: 21px;
     padding-top: 13px;
@@ -95,8 +95,8 @@
 
 /*Mot à définir*/
 .glossaire__mot {
-    background: #EFF1ED;
-    color: #31437F;
+    background: var(--moon);
+    color: var(--starry);
     border-radius: 12px;
     padding-top: 11px;
     padding-bottom: 11px;
@@ -136,25 +136,25 @@
 
 /*Introduction*/
 .about__blockIntro {
-    background-color: #31437F;
+    background-color: var(--starry);
     border-radius: 25px;
-    color: white;
+    color: var(--light);
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
     padding-bottom: 5px;
-
+    margin-bottom: 33px;
 }
 
 /*Bloc itation de fin*/
 .about__quoteBlock {
-    background: #EFF1ED;
+    background: var(--moon);
     border-radius: 25px;
     padding-left: 18px;
     padding-right: 18px;
     padding-top: 1px;
     padding-bottom: 1px;
-    color: #31437F;
+    color: var(--starry);
     margin-left: 27px;
     margin-right: 27px;
     margin-top: 37px;
@@ -168,7 +168,7 @@
     font-weight: 400;
     font-size: 13px;
     line-height: 110%;
-    color: #31437F;
+    color: var(--starry);
 }
 
 
@@ -182,7 +182,7 @@
     line-height: 160%;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #4094DE;
+    color: var(--ocean);
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
@@ -195,6 +195,7 @@
 .formulaire {
     display: flex;
     flex-direction: column;
+    margin-bottom: 65px;
 }
 
 /*Titre 'contactez nous'*/
@@ -204,7 +205,7 @@
     font-weight: 700;
     font-size: 25px;
     line-height: 110%;
-    color: #000000;
+    color: var(--infinity);
 }
 
 /*Formulaire de contact*/
@@ -248,14 +249,14 @@
 
 /*Bouton envoyer*/
 .formulaire__contactSendButton {
-    background-color: #587DCA;
+    background-color: var(--dream);
     border-radius: 16px;
     border: none;
     padding-top: 13px;
     padding-bottom: 13px;
     padding-left: 30px;
     padding-right: 30px;
-    color: white;
+    color: var(--light);
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -264,7 +265,7 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--light);
 }
 
 
